@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/mnt/c/Users/syoung/Documents/ChallengeData/cpptest-ct/examples/gtest-cmake-example/.build/_deps/googletest-src/googlemock/include",
+                "/mnt/c/Users/syoung/Documents/ChallengeData/cpptest-ct/examples/gtest-cmake-example/.build/_deps/googletest-src/googletest/include",
+                "/mnt/c/Users/syoung/Documents/ChallengeData/cpptest-ct/examples/gtest-cmake-example/libfoo",
+                "/mnt/c/Users/syoung/Documents/ChallengeData/cpptest-ct/examples/gtest-cmake-example/libbar"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

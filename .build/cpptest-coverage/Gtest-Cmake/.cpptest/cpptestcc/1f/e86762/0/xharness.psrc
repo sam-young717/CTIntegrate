@@ -1,0 +1,17 @@
+xharness.parseFile true
+xharness.addCoverage true
+xharness.reconstruct true
+edgtk.keepDependencyGenerationOptions true
+xharness.useStatementCoverage true
+xharness.useDecisionCoverage true
+xharness.useBlockCoverage true
+xharness.useMcDcCoverage true
+xharness.useSimpleConditionCoverage true
+xharness.useFunctionCoverage true
+xharness.usePathCoverage false
+xharness.useCallCoverage true
+xharness.addRuntimeAutoFinalization true
+xharness.coverageMapFile /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/cpptest-coverage/Gtest-Cmake/.cpptest/cpptestcc/1743001556157_1409271/0/clock.c.map
+xharness.routineManager "symbol_file=*" command=setProperty property=canAddCoverageIn value=off
+xharness.routineManager "symbol_file=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/*" command=setProperty property=canAddCoverageIn value=on
+xharness.routineManager "symbol_file=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/*" command=setProperty property=canAddCoverageIn value=off

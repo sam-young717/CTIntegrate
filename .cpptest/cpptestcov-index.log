@@ -1,0 +1,6 @@
+2025-03-14 14:32:52,403 [INFO] Starting cpptestcov-index 2024.2.0 (10.7.1.20241114B889)...
+2025-03-14 14:32:52,408 [INFO] Arguments: ['./.coverage']
+2025-03-14 14:32:52,409 [INFO] Working dir: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example
+2025-03-14 14:32:52,410 [INFO] Python version: 3.12.3
+2025-03-14 14:32:52,411 [INFO] OS arch: x86_64
+2025-03-14 14:32:52,412 [INFO] OS name: Linux

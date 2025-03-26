@@ -1,0 +1,161 @@
+Start testing: Mar 26 11:09 EDT
+----------------------------------------------------------
+1/2 Testing: TimerTest.StartTimer
+1/2 Test: TimerTest.StartTimer
+Command: "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/Gtest-Cmake" "--gtest_filter=TimerTest.StartTimer"
+Directory: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example
+"TimerTest.StartTimer" start time: Mar 26 11:09 EDT
+Output:
+----------------------------------------------------------
+**************************************************
+*                  Timer Menu                    *
+* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ *
+*                                                *
+* 1) Add a timer                                 *
+* 2) Remove a timer                              *
+* 3) List all timers                             *
+* 4) Show time                                   *
+*                                                *
+* 9) Exit                                        *
+*                                                *
+**************************************************
+
+Enter selection, when done press <enter> > Please enter the start hour [0-23] > Please enter the start minute [0-59] > 
+Please enter the end hour [0-23] > 
+Please enter the end minute [0-59] > 
+Please enter the channel to record > 
+Timer added!
+**************************************************
+*                  Timer Menu                    *
+* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ *
+*                                                *
+* 1) Add a timer                                 *
+* 2) Remove a timer                              *
+* 3) List all timers                             *
+* 4) Show time                                   *
+*                                                *
+* 9) Exit                                        *
+*                                                *
+**************************************************
+
+Enter selection, when done press <enter> > 
+Invalid Action ... try again!
+**************************************************
+*                  Timer Menu                    *
+* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ *
+*                                                *
+* 1) Add a timer                                 *
+* 2) Remove a timer                              *
+* 3) List all timers                             *
+* 4) Show time                                   *
+*                                                *
+* 9) Exit                                        *
+*                                                *
+**************************************************
+
+Enter selection, when done press <enter> > 
+Invalid Action ... try again!
+**************************************************
+*                  Timer Menu                    *
+* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ *
+*                                                *
+* 1) Add a timer                                 *
+* 2) Remove a timer                              *
+* 3) List all timers                             *
+* 4) Show time                                   *
+*                                                *
+* 9) Exit                                        *
+*                                                *
+**************************************************
+
+Enter selection, when done press <enter> > 
+Goodbye
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"TimerTest.StartTimer" end time: Mar 26 11:09 EDT
+"TimerTest.StartTimer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: TimerTest.StopTimer
+2/2 Test: TimerTest.StopTimer
+Command: "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/Gtest-Cmake" "--gtest_filter=TimerTest.StopTimer"
+Directory: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example
+"TimerTest.StopTimer" start time: Mar 26 11:09 EDT
+Output:
+----------------------------------------------------------
+**************************************************
+*                  Timer Menu                    *
+* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ *
+*                                                *
+* 1) Add a timer                                 *
+* 2) Remove a timer                              *
+* 3) List all timers                             *
+* 4) Show time                                   *
+*                                                *
+* 9) Exit                                        *
+*                                                *
+**************************************************
+
+Enter selection, when done press <enter> > Please enter the start hour [0-23] > Please enter the start minute [0-59] > 
+Please enter the end hour [0-23] > 
+Please enter the end minute [0-59] > 
+Please enter the channel to record > 
+Timer added!
+**************************************************
+*                  Timer Menu                    *
+* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ *
+*                                                *
+* 1) Add a timer                                 *
+* 2) Remove a timer                              *
+* 3) List all timers                             *
+* 4) Show time                                   *
+*                                                *
+* 9) Exit                                        *
+*                                                *
+**************************************************
+
+Enter selection, when done press <enter> > 
+Invalid Action ... try again!
+**************************************************
+*                  Timer Menu                    *
+* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ *
+*                                                *
+* 1) Add a timer                                 *
+* 2) Remove a timer                              *
+* 3) List all timers                             *
+* 4) Show time                                   *
+*                                                *
+* 9) Exit                                        *
+*                                                *
+**************************************************
+
+Enter selection, when done press <enter> > 
+Invalid Action ... try again!
+**************************************************
+*                  Timer Menu                    *
+* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ *
+*                                                *
+* 1) Add a timer                                 *
+* 2) Remove a timer                              *
+* 3) List all timers                             *
+* 4) Show time                                   *
+*                                                *
+* 9) Exit                                        *
+*                                                *
+**************************************************
+
+Enter selection, when done press <enter> > 
+Goodbye
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"TimerTest.StopTimer" end time: Mar 26 11:09 EDT
+"TimerTest.StopTimer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 26 11:09 EDT

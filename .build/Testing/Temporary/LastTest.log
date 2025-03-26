@@ -1,0 +1,35 @@
+Start testing: Mar 26 15:34 EDT
+----------------------------------------------------------
+Unable to find executable: Gtest-Cmake
+1/2 Testing: TimerTest.StartTimer
+1/2 Test: TimerTest.StartTimer
+Command: "" "--gtest_filter=TimerTest.StartTimer"
+Directory: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build
+"TimerTest.StartTimer" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TimerTest.StartTimer" end time: Mar 26 15:34 EDT
+"TimerTest.StartTimer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: Gtest-Cmake
+2/2 Testing: TimerTest.StopTimer
+2/2 Test: TimerTest.StopTimer
+Command: "" "--gtest_filter=TimerTest.StopTimer"
+Directory: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build
+"TimerTest.StopTimer" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TimerTest.StopTimer" end time: Mar 26 15:34 EDT
+"TimerTest.StopTimer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 26 15:34 EDT

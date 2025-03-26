@@ -1,0 +1,939 @@
+2025-03-24 16:40:09,968 [INFO] Starting C/C++test 2024.2.0 (10.7.1.20241114B4503) linux.x86_64... at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:78)
+2025-03-24 16:40:09,972 [INFO] Arguments: [-compiler, gcc_9-64, -config, builtin://MISRA C 2004, -report, /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/reports, -resource, /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example, -module, ., -trace, make, clean, all, -input, compile_commands.json] at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:79)
+2025-03-24 16:40:09,972 [INFO] Max memory available: 2147483648 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:80)
+2025-03-24 16:40:09,976 [INFO] Available CPUs: 22 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:81)
+2025-03-24 16:40:09,976 [INFO] Java home: /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/bin/jre at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:82)
+2025-03-24 16:40:09,977 [INFO] Java version: 21.0.4 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:83)
+2025-03-24 16:40:09,978 [INFO] Java vendor: Azul Systems, Inc. at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:84)
+2025-03-24 16:40:09,978 [INFO] OS arch: amd64 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:85)
+2025-03-24 16:40:09,978 [INFO] OS name: Linux at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:86)
+2025-03-24 16:40:09,979 [INFO] OS version: 5.15.146.1-microsoft-standard-WSL2 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:87)
+2025-03-24 16:40:09,980 [INFO] Working dir (user.dir): /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:88)
+2025-03-24 16:40:09,980 [INFO] Home dir (user.home): /home/syoung at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:89)
+2025-03-24 16:40:09,981 [DEBUG] Initializing OSGI... at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:94)
+2025-03-24 16:40:15,267 [DEBUG] Starting: org.apache.felix.scr 1.8.2 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,277 [DEBUG] Starting: com.parasoft.xtest.services.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,284 [DEBUG] Starting: com.parasoft.xtest.analyzers.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,284 [DEBUG] Starting: com.parasoft.xtest.common.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,285 [DEBUG] Starting: com.parasoft.xtest.common.base 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,285 [DEBUG] Starting: com.parasoft.xtest.configuration.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,286 [DEBUG] Starting: com.parasoft.xtest.coverage.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,286 [DEBUG] Starting: com.parasoft.xtest.cpp.api 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,286 [DEBUG] Starting: com.parasoft.xtest.dupcode.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,286 [DEBUG] Starting: com.parasoft.xtest.logging.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,287 [DEBUG] Starting: com.parasoft.xtest.results.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,287 [DEBUG] Starting: com.parasoft.xtest.scope.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,289 [DEBUG] Starting: com.parasoft.xtest.testcases.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,290 [DEBUG] Starting: groovy-all 2.4.21 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,290 [DEBUG] Starting: com.parasoft.xtest.cpp.analyzer.code 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,291 [DEBUG] Starting: com.parasoft.xtest.cpp.analyzer.dependency 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,291 [DEBUG] Starting: com.parasoft.xtest.cpp.analyzer.googletest 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,292 [DEBUG] Starting: com.parasoft.xtest.cpp.analyzer.metrics 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,293 [DEBUG] Starting: com.parasoft.xtest.cpp.analyzer.scripting 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,293 [DEBUG] Starting: com.parasoft.xtest.cpp.analyzer.static.global 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,294 [DEBUG] Starting: com.parasoft.xtest.cpp.config.rulesvalidator 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,294 [DEBUG] Starting: com.parasoft.xtest.cpp.coverage 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,294 [DEBUG] Starting: com.parasoft.xtest.cpp.coverageanalyzer 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,295 [DEBUG] Starting: com.parasoft.xtest.cpp.dupcode 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,300 [DEBUG] Starting: com.parasoft.xtest.cpp.filter.duplicateviolationsremover 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,301 [DEBUG] Starting: com.parasoft.xtest.cpp.filter.fileexists 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,301 [DEBUG] Starting: com.parasoft.xtest.cpp.filter.filename 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,301 [DEBUG] Starting: com.parasoft.xtest.cpp.filter.linesuppressions 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,302 [DEBUG] Starting: com.parasoft.xtest.cpp.filter.localsuppressions 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,302 [DEBUG] Starting: com.parasoft.xtest.cpp.filter.ownerassigner 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,302 [DEBUG] Starting: com.parasoft.xtest.cpp.filter.violationmessagedecorator 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,303 [DEBUG] Starting: com.parasoft.xtest.cpp.filter.violationslimiter 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,303 [DEBUG] Starting: com.parasoft.xtest.cpp.flowexecutor 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,303 [DEBUG] Starting: com.parasoft.xtest.cpp.integration.desktop 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,303 [DEBUG] Starting: com.parasoft.xtest.cpp.integration.unittesting 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,304 [DEBUG] Starting: com.parasoft.xtest.cpp.reporter.csv 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,304 [DEBUG] Starting: com.parasoft.xtest.cpp.reporter.desktop 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,304 [DEBUG] Starting: com.parasoft.xtest.cpp.reporter.exitcode 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,304 [DEBUG] Starting: com.parasoft.xtest.cpp.reporter.txt 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,305 [DEBUG] Starting: com.parasoft.xtest.cpp.reporter.xml 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,305 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.adjuster.cu 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,307 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.adjuster.uh 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,307 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.bdf 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,308 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.cmake 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,308 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.coverage 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,308 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.direct 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,308 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.googletest 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,309 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.lst 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,309 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.sln 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,309 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.trace 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,310 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.txt 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,310 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.vcproj 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,310 [DEBUG] Starting: com.parasoft.xtest.cpp.scope.vcxproj 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,311 [DEBUG] Starting: com.parasoft.xtest.cpp.scopeanalyzer 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,311 [DEBUG] Starting: com.parasoft.xtest.cpp.staticanalyzer 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,312 [DEBUG] Starting: com.parasoft.xtest.cpp.techsupport 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,312 [DEBUG] Starting: com.parasoft.xtest.cpp.util 10.7.1.20241114B2528 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,312 [DEBUG] Starting: com.parasoft.flowanalysis.common.cfg 10.7.1.20241023B5124 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,312 [DEBUG] Starting: com.parasoft.flowanalysis.common.configuration 10.7.1.20241023B5124 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,313 [DEBUG] Starting: com.parasoft.flowanalysis.common.core 10.7.1.20241023B5124 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,313 [DEBUG] Starting: com.parasoft.flowanalysis.common.language 10.7.1.20241023B5124 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,313 [DEBUG] Starting: com.parasoft.flowanalysis.common.precondition 10.7.1.20241023B5124 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,313 [DEBUG] Starting: com.parasoft.flowanalysis.common.util 10.7.1.20241023B5124 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,313 [DEBUG] Starting: com.parasoft.flowanalysis.cpp.core 10.7.1.20241023B5124 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,314 [DEBUG] Starting: com.fasterxml.jackson.core.jackson-annotations 2.17.0 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,314 [DEBUG] Starting: com.fasterxml.jackson.core.jackson-core 2.17.0 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,314 [DEBUG] Starting: com.fasterxml.jackson.core.jackson-databind 2.17.0 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,315 [DEBUG] Starting: com.fasterxml.woodstox.woodstox-core 6.5.1 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,315 [DEBUG] Starting: com.parasoft.xtest.authorship 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,315 [DEBUG] Starting: com.parasoft.xtest.chart.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,315 [DEBUG] Starting: com.parasoft.xtest.common 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,315 [DEBUG] Starting: com.parasoft.xtest.communicator 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,316 [DEBUG] Starting: com.parasoft.xtest.configuration 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,316 [DEBUG] Starting: com.parasoft.xtest.coverage 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,317 [DEBUG] Starting: com.parasoft.xtest.dupcode 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,317 [DEBUG] Starting: com.parasoft.xtest.lic.client 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,317 [DEBUG] Starting: com.parasoft.xtest.preference.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,327 [DEBUG] Starting: com.parasoft.xtest.reports.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,329 [DEBUG] Starting: com.parasoft.xtest.reports.fonts 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,329 [DEBUG] Starting: com.parasoft.xtest.reports.pdf 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,329 [DEBUG] Starting: com.parasoft.xtest.reports 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,330 [DEBUG] Starting: com.parasoft.xtest.repository 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,331 [DEBUG] Starting: com.parasoft.xtest.resource.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,331 [DEBUG] Starting: com.parasoft.xtest.results 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,331 [DEBUG] Starting: com.parasoft.xtest.scontrol.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,332 [DEBUG] Starting: com.parasoft.xtest.scontrol.tfs 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,332 [DEBUG] Starting: com.parasoft.xtest.scontrol 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,333 [DEBUG] Starting: com.parasoft.xtest.scope 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,333 [DEBUG] Starting: com.parasoft.xtest.share.api 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,333 [DEBUG] Starting: com.parasoft.xtest.share 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,334 [DEBUG] Starting: com.parasoft.xtest.suppressions 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,334 [DEBUG] Starting: com.parasoft.xtest.techsupport 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,334 [DEBUG] Starting: com.parasoft.xtest.testimpact 10.7.1.20241108 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,334 [DEBUG] Starting: com.sun.activation.javax.activation 1.2.0 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,335 [DEBUG] Starting: com.sun.mail.javax.mail 1.6.2 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,335 [DEBUG] Starting: org.apache.commons.commons-io 2.17.0 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,335 [DEBUG] Starting: org.apache.commons.logging 1.2.0 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,335 [DEBUG] Starting: org.apache.jcs 1.3.4 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,335 [DEBUG] Starting: org.suigeneris.jrcs.diff 0.4.2 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,336 [DEBUG] Starting: stax2-api 4.2.1 at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startAutoBundles(OsgiLauncher.java:334)
+2025-03-24 16:40:15,884 [DEBUG] OSGI initialized [7142 ms] at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:142)
+2025-03-24 16:40:15,886 [INFO] Stop file handler started (/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.cpptest/cpptest.stop) at com.parasoft.xtest.cpp.launcher.OsgiLauncher$StopFileHandler.run(OsgiLauncher.java:627)
+2025-03-24 16:40:16,000 [DEBUG] Starting DefaultFlowExecutor... at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.executeFlow(DefaultFlowExecutor.java:72)
+2025-03-24 16:40:16,000 [INFO] Diagnostics mode is ON. File=./.cpptest/services.log at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.initialize(ServiceDiagnosticCollector.java:294)
+2025-03-24 16:40:16,035 [DEBUG] Loading preferences... at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.loadPreferences(DefaultFlowExecutor.java:513)
+2025-03-24 16:40:16,049 [WARN] NLS unused message: DefaultFlowExecutor_RULES_NOT_LICENSED in: com.parasoft.xtest.cpp.flowexecutor.res.messages at com.parasoft.xtest.common.base.nls.MessageResourceBundle$MessagesProperties.put(MessageResourceBundle.java:314)
+2025-03-24 16:40:16,049 [WARN] NLS unused message: DefaultFlowExecutor_NO_RULES_IN_TEST_CONFIG in: com.parasoft.xtest.cpp.flowexecutor.res.messages at com.parasoft.xtest.common.base.nls.MessageResourceBundle$MessagesProperties.put(MessageResourceBundle.java:314)
+2025-03-24 16:40:16,050 [WARN] NLS unused message: DefaultFlowExecutor_NOT_LICENSED_RULES_IN_TEST_CONFIG in: com.parasoft.xtest.cpp.flowexecutor.res.messages at com.parasoft.xtest.common.base.nls.MessageResourceBundle$MessagesProperties.put(MessageResourceBundle.java:314)
+2025-03-24 16:40:16,188 [DEBUG] No auto language available, using default for file /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/etc/cpptestcli.properties at com.parasoft.xtest.common.encoding.FileEncodingHelper.guessEncoding(FileEncodingHelper.java:115)
+2025-03-24 16:40:16,189 [INFO] Encoding and charset detected: at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:30)
+2025-03-24 16:40:16,190 [INFO] - default charset: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:31)
+2025-03-24 16:40:16,190 [INFO] - native encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:35)
+2025-03-24 16:40:16,190 [INFO] - file encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:48)
+2025-03-24 16:40:16,191 [INFO] Configured to use:  at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:60)
+2025-03-24 16:40:16,192 [INFO] - native encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:61)
+2025-03-24 16:40:16,193 [INFO] - file encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:62)
+2025-03-24 16:40:16,194 [DEBUG] Localsettings file cpptestcli.properties, encoding detection:UTF-8 at com.parasoft.xtest.common.LocalSettingsUtil.determineCharset(LocalSettingsUtil.java:43)
+2025-03-24 16:40:16,201 [DEBUG] No auto language available, using default for file /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/etc/cpptestcli.properties at com.parasoft.xtest.common.encoding.FileEncodingHelper.guessEncoding(FileEncodingHelper.java:115)
+2025-03-24 16:40:16,215 [DEBUG] No auto language available, using default for file /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/cpptestcli.properties at com.parasoft.xtest.common.encoding.FileEncodingHelper.guessEncoding(FileEncodingHelper.java:115)
+2025-03-24 16:40:16,216 [DEBUG] Localsettings file cpptestcli.properties, encoding detection:UTF-8 at com.parasoft.xtest.common.LocalSettingsUtil.determineCharset(LocalSettingsUtil.java:43)
+2025-03-24 16:40:16,220 [DEBUG] No auto language available, using default for file /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/cpptestcli.properties at com.parasoft.xtest.common.encoding.FileEncodingHelper.guessEncoding(FileEncodingHelper.java:115)
+2025-03-24 16:40:16,221 [INFO] [CONSOLE] Loading preferences... at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:16,221 [INFO] [CONSOLE] Reading preferences from /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/etc/cpptestcli.properties at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:16,222 [INFO] [CONSOLE] Reading preferences from /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/cpptestcli.properties at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:16,222 [INFO] [CONSOLE] Setting property cpptest.scope.module.gtest-cmake-example=. at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:16,223 [INFO] [CONSOLE] Setting property report.location=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/reports at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:16,247 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.common.SystemServiceFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:16,247 [DEBUG] Service access - ISystemService: com.parasoft.xtest.common.SystemService at com.parasoft.xtest.cpp.util.config.ConfigurationUtil.anonymizeCommandLine(ConfigurationUtil.java:304)
+2025-03-24 16:40:16,248 [DEBUG] Service access - IPreferencesService: com.parasoft.xtest.common.dtp.DtpAutoconfPreferencesService at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.loadPreferences(DefaultFlowExecutor.java:759)
+2025-03-24 16:40:16,250 [INFO] DtpAutoconfPreferencesService.processPreferences... at com.parasoft.xtest.common.dtp.DtpAutoconfPreferencesService.processPreferences(DtpAutoconfPreferencesService.java:64)
+2025-03-24 16:40:16,273 [DEBUG] Setting: dtp.url mapped to storage key: dtp.url at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,274 [DEBUG] Setting: dtp.password mapped to storage key: dtp.password at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,622 [INFO] [CONSOLE] DTP auto-configuration is disabled, use dtp.autoconfig setting to enable. at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:16,623 [INFO] DTP autoconfiguration is disabled. at com.parasoft.xtest.common.dtp.DtpAutoconfPreferencesService.processPreferences(DtpAutoconfPreferencesService.java:88)
+2025-03-24 16:40:16,624 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.common.dtp.DtpAutoconfPreferencesService@63b1d4fa at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-03-24 16:40:16,643 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.common.dtp.DtpAutoconfPreferencesService@63b1d4fa at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-03-24 16:40:16,675 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/builtin_cdd/rules.xml for key rules.provider_cpptest_cdd.data at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,676 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir.builtin}/categories.properties for key rules.provider_cpptest_cs_builtin.categories at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,676 [DEBUG] Allowing variable in value ${cpptest:root_dir}/configs/user for key configuration.dir.user at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,677 [DEBUG] Allowing variable in value ${property:local.storage.dir} for key techsupport.archive.location at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,677 [DEBUG] Allowing variable in value ${property:local.storage.dir}/rules/user/rules.xml for key rules.provider_cpptest_cs_user.data at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,678 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/builtin_fa/rulemap.xml for key rules.provider_cpptest_fa_builtin.mapping at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,678 [DEBUG] Allowing variable in value ${property:local.storage.dir}/rules/builtin/rules.xml for key rules.provider_cpptest_cs_builtin.data at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,679 [DEBUG] Allowing variable in value ${property:local.storage.dir}/com.parasoft.xtest.cpp.analyzer.dependency for key cpptest.analyzer.dependency.data.location at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,679 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir.user}/categories.properties for key rules.provider_cpptest_cs_user.categories at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,680 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir.user} for key rules.provider_cpptest_cs_user.dir at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,680 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/builtin/${cpptest:locale:en|ja|zh_CN} for key cpptest.rule.dir.builtin at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,681 [DEBUG] Allowing variable in value ${property:cpptest.testable.source.file.ext}|${property:cpptest.testable.header.file.ext} for key suppression1.file.ext at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,681 [DEBUG] Allowing variable in value ${cpptest:root_dir}/rules for key cpptest.rule.dir at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,682 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/user_fa/rulemap.xml for key rules.provider_cpptest_fa_user.mapping at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,682 [DEBUG] Allowing variable in value ${property:local.storage.dir}/rules/dtp/rulemap.xml for key rules.provider_cpptest_cs_dtp.mapping at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,683 [DEBUG] Allowing variable in value ${property:cpptest.testable.source.file.ext}|${property:cpptest.testable.header.file.ext} for key suppression2.file.ext at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,683 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/builtin_pe/rulemap.xml for key rules.provider_cpptest_pe_builtin.mapping at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,683 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/builtin_metrics/metrics.xml for key rules.provider_cpptest_metrics.data at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,684 [DEBUG] Allowing variable in value ${property:local.storage.dir}/rules/dtp/rules.xml for key rules.provider_cpptest_cs_dtp.data at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,686 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/builtin_fa/rules.xml for key rules.provider_cpptest_fa_builtin.data at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,687 [DEBUG] Allowing variable in value ${property:rule.dir.user} for key cpptest.rule.dir.user at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,687 [DEBUG] Allowing variable in value ${cpptest:root_dir}/scripts/user for key cpptest.scripting.dir.user at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,687 [DEBUG] Allowing variable in value ${cpptest:root_dir}/configs/builtin for key configuration.dir.builtin at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,688 [DEBUG] Allowing variable in value .*\.(${property:cpptest.testable.source.file.ext})|.*\.(${property:cpptest.testable.header.file.ext}) for key cpptest.scope.filter.name.include at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,688 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/builtin_pe/rules.xml for key rules.provider_cpptest_pe_builtin.data at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,688 [DEBUG] Allowing variable in value ${cpptest:root_dir}/scripts/builtin for key cpptest.scripting.dir.builtin at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,689 [DEBUG] Allowing variable in value ${cpptest:etc_dir}/default.psrc; for key cpptest.config.psrc.file at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,689 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir.builtin}/rulemap.xml for key rules.provider_cpptest_cs_builtin.mapping at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,689 [DEBUG] Allowing variable in value ${cpptest:root_dir}/bin/engine/etc/compilers for key cpptest.compiler.dir.builtin at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,690 [DEBUG] Allowing variable in value ${cpptest:workspace_dir}/.cpptest/cpptestcc for key cpptest.scope.coverage.dir at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,690 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir.builtin} for key rules.provider_cpptest_cs_builtin.dir at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,691 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/builtin_incode/rules.xml for key rules.provider_cpptest_cs_builtin_incode.data at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,691 [DEBUG] Allowing variable in value ${property:report.location}/deps for key cpptest.analyzer.dependency.report.location at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,692 [DEBUG] Allowing variable in value ${property:local.storage.dir}/rules/dtp/categories.properties for key rules.provider_cpptest_cs_dtp.categories at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,692 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/builtin_incode/rulemap.xml for key rules.provider_cpptest_cs_builtin_incode.mapping at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,692 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/builtin_global/rules.xml for key rules.provider_cpptest_cs_global.data at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,693 [DEBUG] Allowing variable in value ${property:local.storage.dir}/rules/dtp for key rules.provider_cpptest_cs_dtp.dir at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,693 [DEBUG] Allowing variable in value ${cpptest:root_dir}/compilers for key cpptest.compiler.dir.user at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,693 [DEBUG] Allowing variable in value ${cpptest:launcher_dir}/cpptestcli.properties;${cpptest:user_home}/cpptestcli.properties;cpptestcli.properties for key cpptest.config.properties.file at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,694 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/user_fa/rules.xml for key rules.provider_cpptest_fa_user.data at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,694 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir}/user for key rule.dir.user at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,694 [DEBUG] Allowing variable in value ${cpptest:workspace_dir}/cpptest.bdf for key cpptest.input.bdf.file at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,695 [DEBUG] Allowing variable in value ${property:cpptest.rule.dir.user}/rulemap.xml for key rules.provider_cpptest_cs_user.mapping at com.parasoft.xtest.common.localsettings.validation.LocalSettingsValidator.validate(LocalSettingsValidator.java:62)
+2025-03-24 16:40:16,697 [INFO] Converting property: cpptest.license.local.password ... at com.parasoft.xtest.cpp.flowexecutor.properties.PrefixUpdatePreferencesService.processPreferences(PrefixUpdatePreferencesService.java:37)
+2025-03-24 16:40:16,698 [INFO] Property converted: c++test.license.local.password at com.parasoft.xtest.cpp.flowexecutor.properties.PrefixUpdatePreferencesService.processPreferences(PrefixUpdatePreferencesService.java:40)
+2025-03-24 16:40:16,699 [INFO] Converting property: cpptest.license.use_network ... at com.parasoft.xtest.cpp.flowexecutor.properties.PrefixUpdatePreferencesService.processPreferences(PrefixUpdatePreferencesService.java:37)
+2025-03-24 16:40:16,701 [INFO] Property converted: c++test.license.use_network at com.parasoft.xtest.cpp.flowexecutor.properties.PrefixUpdatePreferencesService.processPreferences(PrefixUpdatePreferencesService.java:40)
+2025-03-24 16:40:16,736 [DEBUG] Setting: techsupport.create.on.exit mapped to storage key: techsupport.create.on.exit at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,736 [DEBUG] Setting: techsupport.enabled mapped to storage key: techsupport.enabled at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,736 [DEBUG] Setting: techsupport.archive.location mapped to storage key: techsupport.archive.location at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,751 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.techsupport.internal.preferences.TechSupportPreferencesFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:16,751 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.techsupport.TechSupportServiceFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:16,752 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.techsupport.TechSupportService@6d2260db at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-03-24 16:40:16,753 [DEBUG] State has changed, notifying tech support items. at com.parasoft.xtest.techsupport.TechSupportService.updateState(TechSupportService.java:85)
+2025-03-24 16:40:16,754 [DEBUG] Setting: techsupport.create.on.exit mapped to storage key: techsupport.create.on.exit at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,754 [DEBUG] Setting: techsupport.enabled mapped to storage key: techsupport.enabled at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,754 [DEBUG] Setting: techsupport.archive.location mapped to storage key: techsupport.archive.location at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,755 [DEBUG] Edg MBCS support enabled. at com.parasoft.xtest.cpp.util.FileEncodingUtil.getFileEncodingOptions(FileEncodingUtil.java:83)
+2025-03-24 16:40:16,756 [INFO] [CONSOLE] Checking license... at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:16,756 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.common.SystemServiceFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:16,757 [DEBUG] Service access - ISystemService: com.parasoft.xtest.common.SystemService at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.checkEulaAcceptance(DefaultFlowExecutor.java:305)
+2025-03-24 16:40:16,757 [DEBUG] Eula accepted at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.checkEulaAcceptance(DefaultFlowExecutor.java:310)
+2025-03-24 16:40:16,770 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.techsupport.TechSupportService@6d2260db at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-03-24 16:40:16,795 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.lic.client.internal.service.LicenseServiceFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:16,795 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.lic.client.internal.service.LicenseService@76b0ae1b at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-03-24 16:40:16,796 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.common.preferences.GeneralPreferencesFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:16,797 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.common.dtp.DtpPreferencesFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:16,797 [DEBUG] Setting: dtp.url mapped to storage key: dtp.url at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,798 [DEBUG] Setting: dtp.password mapped to storage key: dtp.password at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,811 [INFO] Using license source store from null at com.parasoft.xtest.lic.client.LicenseDefinitionStorage.setupPreferenceStore(LicenseDefinitionStorage.java:211)
+2025-03-24 16:40:16,814 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.lic.client.LicensePreferencesFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:16,817 [DEBUG] Setting: c++test.license.use_network mapped to storage key: c++test.license.use_network at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,818 [DEBUG] Setting: c++test.license.local.password mapped to storage key: c++test.license.local.password at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-03-24 16:40:16,825 [INFO] Number of telemetry configurations: 1 at com.parasoft.xtest.common.telemetry.UTelemetry.getTelemetryConfiguration(UTelemetry.java:65)
+2025-03-24 16:40:16,827 [DEBUG] Cpptest telemetry connection string: qVx9N1NMROjrd/s5HgmLbh4kIv6dTNYdzEy4zAL6u0SUx7CLOwrBWyMGXcDILMBNTVAryX2ODUXg2PfuDcw6HNwMMYWqbGNm3sEiI+S6e9uXK5Drf/rIq7sl7+L9GQlWWXWWpD+TqJVq8yrwlAD1uS6Ltgs6fqZhCfD41sVTBXKodhCyhPb+OqYP45dEWdglGqC3a+n30GvHqRfROoHGbDuOk0JAHLpMcPa/1V+jxVC3RquIaZIc+9/XM4cVYgAzTSsb/wuUd+FHntPOe9oOmjZy+x0MFGeSJ7FDLFTG8KANa/rG7k4JPXx2AbD54SV1Rl6VfELg1rT61V38yglfNw== at com.parasoft.xtest.cpp.flowexecutor.telemetry.TelemetryConfigurationService.getConnectionString(TelemetryConfigurationService.java:26)
+2025-03-24 16:40:16,840 [INFO] Started ProfilerDumper listening thread on command file: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/xtest_dump_stats.cmd at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.<init>(ProfilerStatisticsService.java:54)
+2025-03-24 16:40:16,843 [INFO] Setting connection string by configuration service at com.parasoft.xtest.common.telemetry.TelemetryReporter.findConnectionString(TelemetryReporter.java:134)
+2025-03-24 16:40:16,851 [DEBUG] Found company id in cache: N0+Me3v9QnfZ3QaWlaEJ2pHxXb6vLfAzHpCWKhlkbyE= at com.parasoft.xtest.common.telemetry.TelemetryReporter.findCompanyName(TelemetryReporter.java:213)
+2025-03-24 16:40:16,852 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.common.telemetry.TelemetryReporterFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:16,853 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.common.telemetry.TelemetryReporter@efb7eb2 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-03-24 16:40:16,863 [DEBUG] Available Cloud VMs: [Docker, AWS, Azure] at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:45)
+2025-03-24 16:40:16,864 [DEBUG] Docker: Detection... at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:52)
+2025-03-24 16:40:16,868 [DEBUG] Docker: Processing file: cgroup at com.parasoft.xtest.common.vm.DockerDetector.extractDockerId(DockerDetector.java:152)
+2025-03-24 16:40:16,870 [DEBUG] Docker: Processing file: cgroup at com.parasoft.xtest.common.vm.DockerDetector.extractDockerId(DockerDetector.java:152)
+2025-03-24 16:40:16,871 [DEBUG] Docker: Processing file: mountinfo at com.parasoft.xtest.common.vm.DockerDetector.extractDockerId(DockerDetector.java:152)
+2025-03-24 16:40:16,878 [DEBUG] AWS: Detection... at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:52)
+2025-03-24 16:40:16,881 [DEBUG] AWS: No hypervisor file found. at com.parasoft.xtest.common.vm.AWSDetector.getAWSSystemUUID(AWSDetector.java:90)
+2025-03-24 16:40:16,882 [DEBUG] Azure: Detection... at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:52)
+2025-03-24 16:40:16,883 [DEBUG] Azure: /sys/devices/virtual/dmi/id/chassis_asset_tag file is not found... at com.parasoft.xtest.common.vm.AzureDetector.isAzureDetected(AzureDetector.java:124)
+2025-03-24 16:40:16,884 [DEBUG] Azure: /var/lib/dhclient/dhclient-eth0.lease file is not found... at com.parasoft.xtest.common.vm.AzureDetector.isAzureDetected(AzureDetector.java:124)
+2025-03-24 16:40:16,884 [DEBUG] Azure: /var/lib/dhcp/dhclient.eth0.leases file is not found... at com.parasoft.xtest.common.vm.AzureDetector.isAzureDetected(AzureDetector.java:124)
+2025-03-24 16:40:16,884 [DEBUG] Cannot detect Azure environment. None of used Azure id is valid at com.parasoft.xtest.common.vm.AzureDetector.usingAzureVM(AzureDetector.java:113)
+2025-03-24 16:40:16,884 [DEBUG] No Cloud VMInfo found at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:84)
+2025-03-24 16:40:16,886 [DEBUG] Loading Xtest native library... at com.parasoft.xtest.common.nativecode.NativeDLL.loadLibrary(NativeDLL.java:73)
+2025-03-24 16:40:16,937 [DEBUG] File [/home/syoung/.parasoft/c++test/10.7/license/current.bor] not exists. at com.parasoft.xtest.lic.client.internal.BorrowedLicenseManager.load(BorrowedLicenseManager.java:324)
+2025-03-24 16:40:16,983 [INFO] security.provider.1=SUN at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,984 [INFO] security.provider.2=SunRsaSign at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,984 [INFO] security.provider.3=SunEC at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,984 [INFO] security.provider.4=SunJSSE at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,985 [INFO] security.provider.5=SunJCE at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,985 [INFO] security.provider.6=SunJGSS at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,986 [INFO] security.provider.7=SunSASL at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,987 [INFO] security.provider.8=XMLDSig at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,987 [INFO] security.provider.9=SunPCSC at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,987 [INFO] security.provider.10=JdkLDAP at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,988 [INFO] security.provider.11=JdkSASL at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,989 [INFO] security.provider.12=SunPKCS11 at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
+2025-03-24 16:40:16,990 [INFO] [FIPS] - Expected exactly 3 providers but was: 12 at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:47)
+2025-03-24 16:40:16,990 [INFO] [FIPS] - security.provider.1=org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:51)
+2025-03-24 16:40:16,990 [INFO] [FIPS] - security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips:BCFIPS at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:55)
+2025-03-24 16:40:16,990 [INFO] [FIPS] - ssl.KeyManagerFactory.algorithm=PKIX at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:69)
+2025-03-24 16:40:16,990 [INFO] [FIPS] - keystore.type.compat=false at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:69)
+2025-03-24 16:40:16,991 [INFO] [FIPS] - keystore.type=fips at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:69)
+2025-03-24 16:40:16,991 [INFO] [FIPS] - org.bouncycastle.fips.approved_only=true at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:75)
+2025-03-24 16:40:16,993 [INFO] [CONSOLE] License: Initializing local license for C++test 10.7 at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:16,993 [INFO] initialization: begin at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.doInitialize(InternalLicenseManager.java:645)
+2025-03-24 16:40:16,995 [DEBUG] CLI mode - not checking whether the license is starting as deactivated. at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.isStartingDeactivated(InternalLicenseManager.java:255)
+2025-03-24 16:40:16,996 [DEBUG] Asynchronous activation of the license during initialization at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.doInitialize(InternalLicenseManager.java:653)
+2025-03-24 16:40:16,997 [DEBUG] activateLicense: entered activation mode in THREAD: ServiceDiagnosticCollector Thread@306882a8 THIS@6eea31ad at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.activateLicense(InternalLicenseManager.java:387)
+2025-03-24 16:40:17,006 [INFO] [CONSOLE] License: Activating Custom Edition at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,007 [INFO] activateLicense: begin in THREAD: License Check Thread (IntLicMan@6eea31ad)@51be2a47 THIS@6eea31ad at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalActivateLicense(InternalLicenseManager.java:422)
+2025-03-24 16:40:17,011 [DEBUG] Waiting for license activation for: THREAD: main@61bbe9ba THIS@6eea31ad at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.waitForActivation(InternalLicenseManager.java:1289)
+2025-03-24 16:40:17,015 [DEBUG] Waiting for license activation for: THREAD: ServiceDiagnosticCollector Thread@306882a8 THIS@6eea31ad at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.waitForActivation(InternalLicenseManager.java:1289)
+2025-03-24 16:40:17,020 [DEBUG] No pending released found, skip releasing.. at com.parasoft.xtest.lic.client.internal.BorrowedLicenseManager.processReleassing(BorrowedLicenseManager.java:131)
+2025-03-24 16:40:17,021 [INFO] Borrowed license file [/home/syoung/.parasoft/c++test/10.7/license/current.bor] does not exist, moving to released skipped. at com.parasoft.xtest.lic.client.internal.BorrowedLicenseManager.moveToReleased(BorrowedLicenseManager.java:370)
+2025-03-24 16:40:17,023 [DEBUG] No pending released found, skip releasing.. at com.parasoft.xtest.lic.client.internal.BorrowedLicenseManager.processReleassing(BorrowedLicenseManager.java:131)
+2025-03-24 16:40:17,024 [INFO] [CONSOLE] License: Checking features at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,024 [INFO] Checking license features... at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkMainFeature(LicenseCheckThread.java:699)
+2025-03-24 16:40:17,024 [INFO] Feature: C++test, version: 10.7 at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkMainFeature(LicenseCheckThread.java:709)
+2025-03-24 16:40:17,033 [INFO] Using all users common parasoft directory to create token file. at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFileRoot(TokenFilesStorage.java:305)
+2025-03-24 16:40:17,036 [WARN] Call to find all users common parasoft directory is avaialble only on Windows. at com.parasoft.xtest.common.SystemInfoUtil.getAllUsersCommonParasoftDirectory(SystemInfoUtil.java:360)
+2025-03-24 16:40:17,038 [INFO] Cannot get all users common parasoft directory. (Windows only) at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFileRoot(TokenFilesStorage.java:309)
+2025-03-24 16:40:17,039 [INFO] Using system temp directory to create token file. at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFileRoot(TokenFilesStorage.java:319)
+2025-03-24 16:40:17,039 [INFO] Token dir: /tmp/.pslic at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.initRoot(TokenFilesStorage.java:299)
+2025-03-24 16:40:17,054 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,084 [INFO] License configured at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkMainFeature(LicenseCheckThread.java:719)
+2025-03-24 16:40:17,084 [INFO] [CONSOLE] License: Main C++test feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,085 [INFO] Final main feature status: OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkMainFeature(LicenseCheckThread.java:732)
+2025-03-24 16:40:17,085 [DEBUG] Checking status of feature 'Static Analysis' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,091 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,099 [INFO] Final status of feature 'Static Analysis': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,100 [INFO] [CONSOLE] License: Static Analysis feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,100 [DEBUG] Checking status of feature 'Flow Analysis' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,101 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,112 [INFO] Final status of feature 'Flow Analysis': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,113 [INFO] [CONSOLE] License: Flow Analysis feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,113 [DEBUG] Checking status of feature 'Automation' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,115 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,124 [INFO] Final status of feature 'Automation': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,124 [INFO] [CONSOLE] License: Automation feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,126 [DEBUG] Checking status of feature 'DTP Publish' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,128 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,137 [INFO] Final status of feature 'DTP Publish': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,137 [INFO] [CONSOLE] License: DTP Publish feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,138 [DEBUG] Checking status of feature 'Unit Test' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,138 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,148 [INFO] Final status of feature 'Unit Test': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,149 [INFO] [CONSOLE] License: Unit Test feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,149 [DEBUG] Checking status of feature 'Coverage' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,150 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,162 [INFO] Final status of feature 'Coverage': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,162 [INFO] [CONSOLE] License: Coverage feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,163 [DEBUG] Checking status of feature 'Desktop Command Line' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,164 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,171 [INFO] Final status of feature 'Desktop Command Line': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,172 [INFO] [CONSOLE] License: Desktop Command Line feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,172 [DEBUG] Checking status of feature 'AUTOSAR Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,173 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,181 [INFO] Final status of feature 'AUTOSAR Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,182 [INFO] [CONSOLE] License: AUTOSAR Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,182 [DEBUG] Checking status of feature 'CWE Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,183 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,190 [INFO] Final status of feature 'CWE Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,190 [INFO] [CONSOLE] License: CWE Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,191 [DEBUG] Checking status of feature 'DISA STIG Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,191 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,200 [INFO] Final status of feature 'DISA STIG Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,201 [INFO] [CONSOLE] License: DISA STIG Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,201 [DEBUG] Checking status of feature 'HIC++ Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,203 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,210 [INFO] Final status of feature 'HIC++ Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,210 [INFO] [CONSOLE] License: HIC++ Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,211 [DEBUG] Checking status of feature 'JSF Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,212 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,219 [INFO] Final status of feature 'JSF Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,219 [INFO] [CONSOLE] License: JSF Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,220 [DEBUG] Checking status of feature 'MISRA Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,221 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,239 [INFO] Final status of feature 'MISRA Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,239 [INFO] [CONSOLE] License: MISRA Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,240 [DEBUG] Checking status of feature 'MISRA C 2012 Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,241 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,250 [INFO] Final status of feature 'MISRA C 2012 Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,250 [INFO] [CONSOLE] License: MISRA C 2012 Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,251 [DEBUG] Checking status of feature 'MISRA C++ 2023 Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,254 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,260 [INFO] Final status of feature 'MISRA C++ 2023 Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,261 [INFO] [CONSOLE] License: MISRA C++ 2023 Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,261 [DEBUG] Checking status of feature 'OWASP Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,262 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,271 [INFO] Final status of feature 'OWASP Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,271 [INFO] [CONSOLE] License: OWASP Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,272 [DEBUG] Checking status of feature 'Security Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,273 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,279 [INFO] Final status of feature 'Security Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,280 [INFO] [CONSOLE] License: Security Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,281 [DEBUG] Checking status of feature 'SEI CERT C Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,282 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,290 [INFO] Final status of feature 'SEI CERT C Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,290 [INFO] [CONSOLE] License: SEI CERT C Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,290 [DEBUG] Checking status of feature 'SEI CERT C++ Rules' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,292 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,303 [INFO] Final status of feature 'SEI CERT C++ Rules': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,303 [INFO] [CONSOLE] License: SEI CERT C++ Rules feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,304 [DEBUG] Checking status of feature 'Coverage Advisor' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,305 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,313 [INFO] Final status of feature 'Coverage Advisor': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,314 [INFO] [CONSOLE] License: Coverage Advisor feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,314 [DEBUG] Checking status of feature 'Code Dependency Export' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,315 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,326 [INFO] Final status of feature 'Code Dependency Export': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,327 [INFO] [CONSOLE] License: Code Dependency Export feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,328 [DEBUG] Checking status of feature 'LLM Integration' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:551)
+2025-03-24 16:40:17,329 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:17,338 [INFO] Final status of feature 'LLM Integration': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:631)
+2025-03-24 16:40:17,338 [INFO] [CONSOLE] License: LLM Integration feature: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,340 [DEBUG] Telemetry event: xtest.license.check.data at com.parasoft.xtest.common.telemetry.UTelemetry.reportEvent(UTelemetry.java:82)
+2025-03-24 16:40:17,341 [DEBUG] Ignoring telemetry event: xtest.license.check.data at com.parasoft.xtest.common.telemetry.TelemetryReporter.reportEvent(TelemetryReporter.java:229)
+2025-03-24 16:40:17,341 [DEBUG] C++test STATUS: License is valid at com.parasoft.xtest.lic.client.internal.FeaturesStates.getMainFeatureStatus(FeaturesStates.java:203)
+2025-03-24 16:40:17,342 [INFO] activateLicense: end, overall status: OK in THREAD: License Check Thread (IntLicMan@6eea31ad)@51be2a47 THIS@6eea31ad at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalActivateLicense(InternalLicenseManager.java:430)
+2025-03-24 16:40:17,342 [INFO] [CONSOLE] License: Activation finished: License is valid at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,342 [INFO] [CONSOLE] License: Machine id LINUX2-5035a715 (Default) at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,343 [INFO] cancelOtherThreads: begin at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.cancelOtherThreads(InternalLicenseManager.java:950)
+2025-03-24 16:40:17,344 [DEBUG] C++test STATUS: License is valid at com.parasoft.xtest.lic.client.internal.FeaturesStates.getMainFeatureStatus(FeaturesStates.java:203)
+2025-03-24 16:40:17,345 [DEBUG] activateLicense: leaving activation mode in THREAD: License Check Thread (IntLicMan@6eea31ad)@51be2a47 THIS@6eea31ad at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.activateLicenseFinished(InternalLicenseManager.java:1067)
+2025-03-24 16:40:17,346 [DEBUG] Finished waiting for license activation for: THREAD: main@61bbe9ba THIS@6eea31ad at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.waitForActivation(InternalLicenseManager.java:1301)
+2025-03-24 16:40:17,347 [DEBUG] Finished waiting for license activation for: THREAD: ServiceDiagnosticCollector Thread@306882a8 THIS@6eea31ad at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.waitForActivation(InternalLicenseManager.java:1301)
+2025-03-24 16:40:17,348 [DEBUG] Using license feature MAIN_FEATURE for XML-Report-Generation at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,348 [INFO] [CONSOLE] Checking compiler configuration... at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,348 [DEBUG] Using license feature MAIN_FEATURE for Email-Reports at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,349 [DEBUG] Using license feature MAIN_FEATURE for Application-Monitoring at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,349 [DEBUG] Using license feature MAIN_FEATURE for Native-Tests-Import at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,350 [DEBUG] Using license feature MAIN_FEATURE for Rule-Wizard at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,351 [DEBUG] Using license feature MAIN_FEATURE for Source-Control at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,352 [DEBUG] C++test STATUS: License is valid at com.parasoft.xtest.lic.client.internal.FeaturesStates.getMainFeatureStatus(FeaturesStates.java:203)
+2025-03-24 16:40:17,355 [DEBUG] Using license feature MAIN_FEATURE for Change-Based-Testing at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,360 [DEBUG] Using license feature MAIN_FEATURE for Embedded-Testing at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,361 [DEBUG] Using license feature MAIN_FEATURE for Runtime-Error-Detection at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,403 [DEBUG] Using license feature MAIN_FEATURE for Sniffer at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,404 [DEBUG] Using license feature MAIN_FEATURE for Security at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,405 [DEBUG] Using license feature MAIN_FEATURE for Parameterization at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,405 [DEBUG] Initializing CompilersManager... at com.parasoft.xtest.cpp.util.build.CompilersManager.init(CompilersManager.java:152)
+2025-03-24 16:40:17,407 [DEBUG] Using license feature MAIN_FEATURE for Mass-Creation at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,408 [DEBUG] Using license feature MAIN_FEATURE for Spring-Framework at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,410 [DEBUG] Using license feature MAIN_FEATURE for Generate-Recommendations at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,410 [INFO] [CONSOLE] Sending usage data is disabled, use usage.reporting.enabled to enable at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,410 [DEBUG] Using license feature MAIN_FEATURE for Quick-Fix at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,411 [DEBUG] Using license feature MAIN_FEATURE for Self-Healing at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,422 [DEBUG] Using license feature MAIN_FEATURE for API-Test-Creation at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,422 [DEBUG] NO custom compilers directory configured with property: cpptest.compiler.dir.user at com.parasoft.xtest.cpp.util.build.CompilersManager.getCppTestCompilerUserDir(CompilersManager.java:507)
+2025-03-24 16:40:17,424 [DEBUG] NO custom compilers directory configured with property: custom.compilers.dir at com.parasoft.xtest.cpp.util.build.CompilersManager.getCppTestCompilerUserDir(CompilersManager.java:516)
+2025-03-24 16:40:17,424 [DEBUG] Using license feature MAIN_FEATURE for Performance-Benchmarking at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,425 [DEBUG] Using license feature MAIN_FEATURE for Automation at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,425 [DEBUG] Using license feature MAIN_FEATURE for DTP-Access at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,427 [DEBUG] Using license feature MAIN_FEATURE for Enforce-Max-Errors at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,428 [DEBUG] Using license feature MAIN_FEATURE for Max-Unit-Test-Bulk-Testables-Value at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,429 [DEBUG] Using license feature MAIN_FEATURE for Team-Share-Edit at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,429 [DEBUG] Using license feature MAIN_FEATURE for Code-Review at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,430 [DEBUG] Using license feature MAIN_FEATURE for Concerto-Access at com.parasoft.xtest.cpp.flowexecutor.license.CpptestLicenseDefinitionProvider.getRequiredFeatures(CpptestLicenseDefinitionProvider.java:106)
+2025-03-24 16:40:17,435 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.lic.client.internal.service.LicenseService@76b0ae1b at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-03-24 16:40:17,437 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.common.telemetry.TelemetryReporter@efb7eb2 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-03-24 16:40:17,980 [DEBUG] CompilersManager initialized [575 ms] at com.parasoft.xtest.cpp.util.build.CompilersManager.init(CompilersManager.java:154)
+2025-03-24 16:40:17,981 [INFO] [CONSOLE] Setting compiler to gcc_9-64 at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,982 [INFO] [CONSOLE] Checking test configuration... at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:17,993 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.configuration.TestConfigurationsServiceFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:18,013 [DEBUG] Not an instance of stateful oidc service, ignoring: null at com.parasoft.xtest.common.dtp.DtpPreferences.getStatefulOidcService(DtpPreferences.java:100)
+2025-03-24 16:40:18,026 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.common.preferences.OidcPreferencesFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:18,041 [DEBUG] Created a new persistently cached instance of service via factory: null::null::null::/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example::0::DeviceCode::1338237422 at com.parasoft.xtest.common.oidc.OidcServiceFactory.getService(OidcServiceFactory.java:42)
+2025-03-24 16:40:18,042 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.common.oidc.OidcService@2fa3be26 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-03-24 16:40:18,043 [DEBUG] Oidc service is disabled at com.parasoft.xtest.common.httpclient.XRestClient.createExecutor(XRestClient.java:182)
+2025-03-24 16:40:18,050 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.common.oidc.OidcService@2fa3be26 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-03-24 16:40:18,092 [INFO] [CONSOLE] DTP Services: Loading available services from https://localhost:8443/grs/api/v1.9/dtpServices at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:18,093 [INFO] DTP Services: Loading available services from https://localhost:8443/grs/api/v1.9/dtpServices at com.parasoft.xtest.common.dtp.DtpServiceRegistry.writeOnConsole(DtpServiceRegistry.java:388)
+2025-03-24 16:40:18,099 [DEBUG] Executing request:  URI: https://localhost:8443/grs/api/v1.9/dtpServices, RestClient: com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient@4dd94a58 at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:246)
+2025-03-24 16:40:18,169 [INFO] [CONSOLE] DTP Services: Cannot load available services v1.9 from https://localhost:8443 at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:18,169 [INFO] DTP Services: Cannot load available services v1.9 from https://localhost:8443 at com.parasoft.xtest.common.dtp.DtpServiceRegistry.writeOnConsole(DtpServiceRegistry.java:388)
+2025-03-24 16:40:18,170 [INFO] [CONSOLE] DTP Services: Unable to connect to DTP. Review the settings and the server connection. at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:18,170 [INFO] DTP Services: Unable to connect to DTP. Review the settings and the server connection. at com.parasoft.xtest.common.dtp.DtpServiceRegistry.writeOnConsole(DtpServiceRegistry.java:388)
+2025-03-24 16:40:18,176 [WARN] Unable to read services from file after failed to read from remote v1.9_https://localhost:8443
+  file: ./.cpptest/.dtp_services_cache
+  content read failure: ./.cpptest/.dtp_services_cache at com.parasoft.xtest.common.dtp.DtpServiceRegistry.readServices(DtpServiceRegistry.java:366)
+2025-03-24 16:40:18,178 [INFO] Could not retrieve available services: Connect to localhost:8443 [localhost/127.0.0.1] failed: Connection refused at com.parasoft.xtest.common.dtp.DtpServiceRegistry.checkForDeprecatedDtp(DtpServiceRegistry.java:259)
+com.parasoft.xtest.common.dtp.DtpException: Could not retrieve available services: Connect to localhost:8443 [localhost/127.0.0.1] failed: Connection refused
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:659) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.readServices(DtpServiceRegistry.java:344) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.initialize(DtpServiceRegistry.java:281) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.isVersionSupported(DtpServiceRegistry.java:172) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.checkForDeprecatedDtp(DtpServiceRegistry.java:236) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.<init>(DtpServiceRegistry.java:96) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.<init>(DtpServiceRegistry.java:85) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistryFactory.createService(DtpServiceRegistryFactory.java:23) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistryFactory.createService(DtpServiceRegistryFactory.java:1) ~[?:?]
+	at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:108) ~[?:?]
+	at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getService(AbstractCachedServiceFactory.java:42) ~[?:?]
+	at com.parasoft.xtest.services.internal.InternalServicesProvider$InternalFactoryServiceRef.getService(InternalServicesProvider.java:241) ~[?:?]
+	at com.parasoft.xtest.services.api.AbstractServicesProvider.getService(AbstractServicesProvider.java:41) ~[?:?]
+	at com.parasoft.xtest.services.internal.InternalServicesProvider.getService(InternalServicesProvider.java:57) ~[?:?]
+	at com.parasoft.xtest.services.api.AbstractServicesProvider.getService(AbstractServicesProvider.java:31) ~[?:?]
+	at com.parasoft.xtest.services.api.ServiceUtil.getService(ServiceUtil.java:66) ~[?:?]
+	at com.parasoft.xtest.configuration.internal.DtpConfigDataProvider.<init>(DtpConfigDataProvider.java:70) ~[?:?]
+	at com.parasoft.xtest.configuration.internal.DtpConfigDataProviderFactory.getService(DtpConfigDataProviderFactory.java:25) ~[?:?]
+	at com.parasoft.xtest.configuration.internal.DtpConfigDataProviderFactory.getService(DtpConfigDataProviderFactory.java:1) ~[?:?]
+	at com.parasoft.xtest.services.internal.InternalServicesProvider$InternalFactoryServiceRef.getService(InternalServicesProvider.java:241) ~[?:?]
+	at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:58) ~[?:?]
+	at com.parasoft.xtest.services.internal.InternalServicesProvider.getServices(InternalServicesProvider.java:71) ~[?:?]
+	at com.parasoft.xtest.services.api.ServiceUtil.getServices(ServiceUtil.java:117) ~[?:?]
+	at com.parasoft.xtest.configuration.TestConfigurationsService.getDataProviders(TestConfigurationsService.java:388) ~[?:?]
+	at com.parasoft.xtest.configuration.TestConfigurationsService.getProviderForUrl(TestConfigurationsService.java:420) ~[?:?]
+	at com.parasoft.xtest.configuration.TestConfigurationsService.internalGetTestConfiguration(TestConfigurationsService.java:140) ~[?:?]
+	at com.parasoft.xtest.configuration.TestConfigurationsService.getTestConfiguration(TestConfigurationsService.java:108) ~[?:?]
+	at com.parasoft.xtest.configuration.TestConfigurationsService.getTestConfiguration(TestConfigurationsService.java:96) ~[?:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at com.parasoft.xtest.common.services.AbstractSafeServiceFactory$1.invoke(AbstractSafeServiceFactory.java:75) ~[?:?]
+	at jdk.proxy4.$Proxy32.getTestConfiguration(Unknown Source) ~[?:?]
+	at com.parasoft.xtest.cpp.flowexecutor.TestConfigHelper.handleTestConfiguration(TestConfigHelper.java:83) ~[?:?]
+	at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.executeFlow(DefaultFlowExecutor.java:114) ~[?:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at com.parasoft.xtest.cpp.launcher.OsgiLauncher.startFlowController(OsgiLauncher.java:372) ~[?:?]
+	at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:146) ~[?:?]
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8443 [localhost/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[?:?]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[?:?]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[?:?]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[?:?]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[?:?]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.HttpClientWithAuthCacheFactory$ClientImpl.execute(HttpClientWithAuthCacheFactory.java:144) ~[?:?]
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173) ~[?:?]
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.HttpsExecutorFactory$ProxyExecutor.execute(HttpsExecutorFactory.java:241) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:285) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:248) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.getString(XRestClient.java:205) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.getString(XRestClient.java:195) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:635) ~[?:?]
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Unknown Source) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(Unknown Source) ~[?:?]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:?]
+	at java.net.Socket.connect(Unknown Source) ~[?:?]
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368) ~[?:?]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[?:?]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[?:?]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[?:?]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[?:?]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[?:?]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.HttpClientWithAuthCacheFactory$ClientImpl.execute(HttpClientWithAuthCacheFactory.java:144) ~[?:?]
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173) ~[?:?]
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.HttpsExecutorFactory$ProxyExecutor.execute(HttpsExecutorFactory.java:241) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:285) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:248) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.getString(XRestClient.java:205) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.getString(XRestClient.java:195) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:635) ~[?:?]
+	... 37 more
+2025-03-24 16:40:18,187 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.common.dtp.DtpServiceRegistryFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:18,188 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.common.dtp.DtpServiceRegistry@7c974942 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-03-24 16:40:18,191 [DEBUG] Not an instance of stateful oidc service, ignoring: null at com.parasoft.xtest.common.dtp.DtpPreferences.getStatefulOidcService(DtpPreferences.java:100)
+2025-03-24 16:40:18,192 [DEBUG] Oidc service is disabled at com.parasoft.xtest.common.httpclient.XRestClient.createExecutor(XRestClient.java:182)
+2025-03-24 16:40:18,194 [DEBUG] Executing request:  URI: https://localhost:8443/grs/api/v1/dtpServices, RestClient: com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient@7f814d39 at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:246)
+2025-03-24 16:40:18,195 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.common.preferences.EnginesPreferencesFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:18,201 [WARN] Unable to read services from file after failed to read from remote https://localhost:8443
+  file: ./.cpptest/.dtp_services_cache
+  content read failure: ./.cpptest/.dtp_services_cache at com.parasoft.xtest.common.dtp.DtpServiceRegistry.readServices(DtpServiceRegistry.java:366)
+2025-03-24 16:40:18,201 [DEBUG] Service com.parasoft.xtest.analyzers.api.runner.IAnalyzerRunnerService is not available. at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:64)
+2025-03-24 16:40:18,202 [DEBUG] Service com.parasoft.xtest.analyzers.api.runner.IAnalyzerRunnerService is not available. at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:64)
+2025-03-24 16:40:18,202 [WARN] Could not retrieve available services: Connect to localhost:8443 [localhost/127.0.0.1] failed: Connection refused at com.parasoft.xtest.common.dtp.DtpServiceRegistryDiagnostics.getDiagnosticInfo(DtpServiceRegistryDiagnostics.java:69)
+com.parasoft.xtest.common.dtp.DtpException: Could not retrieve available services: Connect to localhost:8443 [localhost/127.0.0.1] failed: Connection refused
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:659) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.readServices(DtpServiceRegistry.java:344) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.initialize(DtpServiceRegistry.java:281) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.getServicesIds(DtpServiceRegistry.java:122) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.getServicesIds(DtpServiceRegistry.java:112) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistryDiagnostics.getDiagnosticInfo(DtpServiceRegistryDiagnostics.java:63) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry.getDiagnosticInfo(DtpServiceRegistry.java:218) ~[?:?]
+	at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.getDiagnosticText(ServiceDiagnosticCollector.java:238) ~[?:?]
+	at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.access$0(ServiceDiagnosticCollector.java:208) ~[?:?]
+	at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:116) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) ~[?:?]
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8443 [localhost/127.0.0.1] failed: Connection refused
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156) ~[?:?]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[?:?]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[?:?]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[?:?]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[?:?]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.HttpClientWithAuthCacheFactory$ClientImpl.execute(HttpClientWithAuthCacheFactory.java:144) ~[?:?]
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173) ~[?:?]
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.HttpsExecutorFactory$ProxyExecutor.execute(HttpsExecutorFactory.java:241) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:285) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:248) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.getString(XRestClient.java:205) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.getString(XRestClient.java:195) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:635) ~[?:?]
+	... 12 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Unknown Source) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(Unknown Source) ~[?:?]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[?:?]
+	at java.net.Socket.connect(Unknown Source) ~[?:?]
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:368) ~[?:?]
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142) ~[?:?]
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393) ~[?:?]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236) ~[?:?]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186) ~[?:?]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[?:?]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110) ~[?:?]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[?:?]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.HttpClientWithAuthCacheFactory$ClientImpl.execute(HttpClientWithAuthCacheFactory.java:144) ~[?:?]
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173) ~[?:?]
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.HttpsExecutorFactory$ProxyExecutor.execute(HttpsExecutorFactory.java:241) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:285) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:248) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.getString(XRestClient.java:205) ~[?:?]
+	at com.parasoft.xtest.common.httpclient.XRestClient.getString(XRestClient.java:195) ~[?:?]
+	at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:635) ~[?:?]
+	... 12 more
+2025-03-24 16:40:18,207 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.common.dtp.DtpServiceRegistry@7c974942 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-03-24 16:40:18,218 [DEBUG] Service com.parasoft.xtest.configuration.api.ITestConfigurationsUpgradeService is not available. at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:64)
+2025-03-24 16:40:18,231 [INFO] [CONSOLE] Updating rules... at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:18,237 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_global.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:18,248 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_builtin.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:18,257 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_pe_builtin.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:18,267 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_user.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:18,271 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cdd.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:18,276 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_fa_user.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:18,293 [DEBUG] Rules share url from settings: true at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.resolveShareUrl(RulesDescriptionProviderFactory.java:247)
+2025-03-24 16:40:18,294 [INFO] The rules share URL is undefined in the test configuration. at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.resolveShareUrl(RulesDescriptionProviderFactory.java:267)
+2025-03-24 16:40:18,341 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_builtin_incode.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:18,351 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_fa_builtin.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:18,354 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_metrics.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:18,363 [DEBUG] Rule update service scanning directory: /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin/en for provider cpptest_cs_builtin at com.parasoft.xtest.configuration.rules.RuleDescriptionUpdateService.refreshDescriptions(RuleDescriptionUpdateService.java:318)
+2025-03-24 16:40:18,363 [INFO] [HIDDEN_CONSOLE] Rule update service scanning directory: /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin/en for provider cpptest_cs_builtin at com.parasoft.xtest.cpp.util.console.LoggingConsole.writeln(LoggingConsole.java:92)
+2025-03-24 16:40:18,368 [DEBUG] using categories description file: file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin/en/categories.properties at com.parasoft.xtest.configuration.rules.RuleDescriptionUpdateService.refreshDescriptions(RuleDescriptionUpdateService.java:323)
+2025-03-24 16:40:18,369 [INFO] [HIDDEN_CONSOLE] using categories description file: file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin/en/categories.properties at com.parasoft.xtest.cpp.util.console.LoggingConsole.writeln(LoggingConsole.java:92)
+2025-03-24 16:40:30,726 [INFO] [HIDDEN_CONSOLE] Rules file is up to date, skipped update at com.parasoft.xtest.cpp.util.console.LoggingConsole.writeln(LoggingConsole.java:92)
+2025-03-24 16:40:30,728 [DEBUG] Rules file is up to date, skipped update at com.parasoft.xtest.configuration.rules.RuleDescriptionUpdateService.refreshDescriptions(RuleDescriptionUpdateService.java:332)
+2025-03-24 16:40:30,735 [DEBUG] Rule update service scanning directory: /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/user for provider cpptest_cs_user at com.parasoft.xtest.configuration.rules.RuleDescriptionUpdateService.refreshDescriptions(RuleDescriptionUpdateService.java:318)
+2025-03-24 16:40:30,735 [INFO] [HIDDEN_CONSOLE] Rule update service scanning directory: /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/user for provider cpptest_cs_user at com.parasoft.xtest.cpp.util.console.LoggingConsole.writeln(LoggingConsole.java:92)
+2025-03-24 16:40:30,736 [DEBUG] using categories description file: file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/user/categories.properties at com.parasoft.xtest.configuration.rules.RuleDescriptionUpdateService.refreshDescriptions(RuleDescriptionUpdateService.java:323)
+2025-03-24 16:40:30,736 [INFO] [HIDDEN_CONSOLE] using categories description file: file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/user/categories.properties at com.parasoft.xtest.cpp.util.console.LoggingConsole.writeln(LoggingConsole.java:92)
+2025-03-24 16:40:30,751 [INFO] [HIDDEN_CONSOLE] Rules file is up to date, skipped update at com.parasoft.xtest.cpp.util.console.LoggingConsole.writeln(LoggingConsole.java:92)
+2025-03-24 16:40:30,751 [DEBUG] Rules file is up to date, skipped update at com.parasoft.xtest.configuration.rules.RuleDescriptionUpdateService.refreshDescriptions(RuleDescriptionUpdateService.java:332)
+2025-03-24 16:40:30,755 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_global.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,819 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_builtin.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,825 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_pe_builtin.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,836 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_user.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,838 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cdd.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,840 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_fa_user.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,845 [DEBUG] Rules share url from settings: true at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.resolveShareUrl(RulesDescriptionProviderFactory.java:247)
+2025-03-24 16:40:30,845 [INFO] The rules share URL is undefined in the test configuration. at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.resolveShareUrl(RulesDescriptionProviderFactory.java:267)
+2025-03-24 16:40:30,850 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_builtin_incode.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,855 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_fa_builtin.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,857 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_metrics.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,857 [INFO] [HIDDEN_CONSOLE] No shared rule providers registered. at com.parasoft.xtest.cpp.util.console.LoggingConsole.writeln(LoggingConsole.java:92)
+2025-03-24 16:40:30,858 [DEBUG] No shared rule providers registered. at com.parasoft.xtest.configuration.rules.RuleDescriptionUpdateService.refreshSharedDescriptions(RuleDescriptionUpdateService.java:127)
+2025-03-24 16:40:30,864 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.configuration.rules.RulesServiceFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:30,867 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_global.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,881 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_builtin.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,886 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_pe_builtin.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,893 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_user.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,897 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cdd.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,900 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_fa_user.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,905 [DEBUG] Rules share url from settings: true at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.resolveShareUrl(RulesDescriptionProviderFactory.java:247)
+2025-03-24 16:40:30,905 [INFO] The rules share URL is undefined in the test configuration. at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.resolveShareUrl(RulesDescriptionProviderFactory.java:267)
+2025-03-24 16:40:30,910 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_cs_builtin_incode.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,916 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_fa_builtin.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,922 [WARN] Share path from settings will be ignored - share is not supported since 10.6.2: rules.provider_cpptest_metrics.share.path at com.parasoft.xtest.configuration.internal.rules.RulesDescriptionProviderFactory.createProvider(RulesDescriptionProviderFactory.java:221)
+2025-03-24 16:40:30,928 [DEBUG] Reading rules definitions using provider id=cpptest_cdd at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:377)
+2025-03-24 16:40:30,930 [DEBUG] parsing file:file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin_cdd/rules.xml at com.parasoft.xtest.configuration.rules.RuleDescriptionParser.parseFile(RuleDescriptionParser.java:74)
+2025-03-24 16:40:30,961 [DEBUG] Using reader for parsing rules/mappings: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@6b63d445 at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.createReader(RuleParserUtil.java:179)
+2025-03-24 16:40:30,973 [DEBUG] Reading rules definitions using provider id=cpptest_cs_builtin at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:377)
+2025-03-24 16:40:30,974 [DEBUG] parsing file:file:/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/./.cpptest/rules/builtin/rules.xml at com.parasoft.xtest.configuration.rules.RuleDescriptionParser.parseFile(RuleDescriptionParser.java:74)
+2025-03-24 16:40:30,987 [DEBUG] Using reader for parsing rules/mappings: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@31fc71ab at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.createReader(RuleParserUtil.java:179)
+2025-03-24 16:40:31,051 [DEBUG] Reading rules definitions using provider id=cpptest_cs_builtin_incode at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:377)
+2025-03-24 16:40:31,051 [DEBUG] parsing file:file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin_incode/rules.xml at com.parasoft.xtest.configuration.rules.RuleDescriptionParser.parseFile(RuleDescriptionParser.java:74)
+2025-03-24 16:40:31,063 [DEBUG] Using reader for parsing rules/mappings: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@71391b3f at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.createReader(RuleParserUtil.java:179)
+2025-03-24 16:40:31,067 [DEBUG] Reading rules definitions using provider id=cpptest_cs_global at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:377)
+2025-03-24 16:40:31,068 [DEBUG] parsing file:file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin_global/rules.xml at com.parasoft.xtest.configuration.rules.RuleDescriptionParser.parseFile(RuleDescriptionParser.java:74)
+2025-03-24 16:40:31,080 [DEBUG] Using reader for parsing rules/mappings: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@2cfbeac4 at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.createReader(RuleParserUtil.java:179)
+2025-03-24 16:40:31,083 [DEBUG] Reading rules definitions using provider id=cpptest_fa_builtin at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:377)
+2025-03-24 16:40:31,083 [DEBUG] parsing file:file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin_fa/rules.xml at com.parasoft.xtest.configuration.rules.RuleDescriptionParser.parseFile(RuleDescriptionParser.java:74)
+2025-03-24 16:40:31,098 [DEBUG] Using reader for parsing rules/mappings: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@12db3386 at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.createReader(RuleParserUtil.java:179)
+2025-03-24 16:40:31,136 [DEBUG] Reading rules definitions using provider id=cpptest_fa_user at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:377)
+2025-03-24 16:40:31,137 [DEBUG] parsing file:file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/user_fa/rules.xml at com.parasoft.xtest.configuration.rules.RuleDescriptionParser.parseFile(RuleDescriptionParser.java:74)
+2025-03-24 16:40:31,155 [DEBUG] File not found under given url file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/user_fa/rules.xml at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.saxParse(RuleParserUtil.java:142)
+2025-03-24 16:40:31,155 [DEBUG] Reading rules definitions using provider id=cpptest_metrics at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:377)
+2025-03-24 16:40:31,156 [DEBUG] parsing file:file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin_metrics/metrics.xml at com.parasoft.xtest.configuration.rules.RuleDescriptionParser.parseFile(RuleDescriptionParser.java:74)
+2025-03-24 16:40:31,172 [DEBUG] Using reader for parsing rules/mappings: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@4078695f at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.createReader(RuleParserUtil.java:179)
+2025-03-24 16:40:31,174 [DEBUG] Reading rules definitions using provider id=cpptest_parseerrors_builtin at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:377)
+2025-03-24 16:40:31,175 [DEBUG] parsing file:file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin_pe/rules.xml at com.parasoft.xtest.configuration.rules.RuleDescriptionParser.parseFile(RuleDescriptionParser.java:74)
+2025-03-24 16:40:31,190 [DEBUG] Using reader for parsing rules/mappings: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@79a1728c at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.createReader(RuleParserUtil.java:179)
+2025-03-24 16:40:31,192 [DEBUG] Reading rules definitions using provider id=cpptest_cs_user at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:377)
+2025-03-24 16:40:31,192 [DEBUG] parsing file:file:/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/./.cpptest/rules/user/rules.xml at com.parasoft.xtest.configuration.rules.RuleDescriptionParser.parseFile(RuleDescriptionParser.java:74)
+2025-03-24 16:40:31,205 [DEBUG] Using reader for parsing rules/mappings: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@a7f0ab6 at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.createReader(RuleParserUtil.java:179)
+2025-03-24 16:40:31,215 [INFO] Applying rule map from provider: cpptest_cs_builtin at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:419)
+2025-03-24 16:40:31,226 [DEBUG] Using reader for parsing rules/mappings: com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser@6de30571 at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.createReader(RuleParserUtil.java:179)
+2025-03-24 16:40:31,304 [INFO] Applying rule map from provider: cpptest_cs_builtin_incode at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:419)
+2025-03-24 16:40:31,308 [DEBUG] File not found under given url file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin_incode/rulemap.xml at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.saxParse(RuleParserUtil.java:142)
+2025-03-24 16:40:31,330 [INFO] Applying rule map from provider: cpptest_fa_builtin at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:419)
+2025-03-24 16:40:31,334 [DEBUG] File not found under given url file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin_fa/rulemap.xml at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.saxParse(RuleParserUtil.java:142)
+2025-03-24 16:40:31,346 [INFO] Applying rule map from provider: cpptest_fa_user at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:419)
+2025-03-24 16:40:31,349 [DEBUG] File not found under given url file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/user_fa/rulemap.xml at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.saxParse(RuleParserUtil.java:142)
+2025-03-24 16:40:31,356 [INFO] Applying rule map from provider: cpptest_parseerrors_builtin at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:419)
+2025-03-24 16:40:31,360 [DEBUG] File not found under given url file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/builtin_pe/rulemap.xml at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.saxParse(RuleParserUtil.java:142)
+2025-03-24 16:40:31,381 [INFO] Applying rule map from provider: cpptest_cs_user at com.parasoft.xtest.configuration.rules.RulesService.init(RulesService.java:419)
+2025-03-24 16:40:31,385 [DEBUG] File not found under given url file:/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest/rules/user/rulemap.xml at com.parasoft.xtest.configuration.rules.util.RuleParserUtil.saxParse(RuleParserUtil.java:142)
+2025-03-24 16:40:31,407 [INFO] [CONSOLE] Computing input scope... at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:31,439 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.bdf.BdfFileReader at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,440 [DEBUG] Created a new persistently cached instance of service via factory: Key [com.parasoft.xtest.common.profiler.ProfilerServiceFactory] at com.parasoft.xtest.common.services.AbstractCachedServiceFactory.getFromInternalCache(AbstractCachedServiceFactory.java:112)
+2025-03-24 16:40:31,441 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.lst.LstFileReader at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,441 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.cmake.CmakeBuildDataProvider at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,442 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.trace.TraceBuildDataProvider at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,448 [INFO] [CONSOLE] Running build command [make, clean, all, -input, compile_commands.json]... at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:31,571 [INFO] Running build command finished [121 ms] at com.parasoft.xtest.cpp.scope.trace.TraceBuildDataProvider.getTestableInputs(TraceBuildDataProvider.java:84)
+2025-03-24 16:40:31,572 [INFO] [CONSOLE]  at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:31,572 [INFO] [CONSOLE] ERROR: Build data not collected - cannot find /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/cpptest.bdf
+HINT: check if specified build command was correct
+HINT: check if any C / C++ files were compiled during the build at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:31,574 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.txt.TxtFileReader at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,574 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.integration.desktop.ut.scope.DesktopUnitTestingScopeComputer at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,574 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.integration.unittesting.scope.UnitTestingScopeComputer at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,575 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.coverage.CoverageScopeComputer at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,575 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.direct.DirectCommandHandler at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,575 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.googletest.GoogleTestScopeComputer at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,576 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.vcxproj.VCXProjScopeComputer at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,577 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.sln.SlnScopeComputer at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,579 [DEBUG] Service access - IScopeComputer: com.parasoft.xtest.cpp.scope.vcproj.VCProjScopeComputer at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.getTestables(DefaultFlowExecutor.java:835)
+2025-03-24 16:40:31,580 [INFO] [CONSOLE]  at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:31,581 [INFO] [CONSOLE] ERROR: Input scope contains no elements - nothing to test at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:31,581 [INFO] [CONSOLE] HINT: use -trace <BUILD_COMMAND> to collect input scope from build command at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:31,583 [INFO] [CONSOLE] HINT: use -input <BUILD_DATA_FILE|PROJ_FILE> to collect input scope from file at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:31,584 [INFO] [CONSOLE] HINT: use -- <COMPILE_COMMAND> to collect input scope from compile command at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:31,585 [INFO] [CONSOLE] HINT: see documentation for details on providing input scope at com.parasoft.xtest.cpp.util.console.Console.writeln(Console.java:117)
+2025-03-24 16:40:31,586 [DEBUG] Breaking execution flow: Input scope contains no elements - nothing to test at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.executeFlow(DefaultFlowExecutor.java:136)
+2025-03-24 16:40:31,586 [DEBUG] DefaultFlowExecutor finished [15677 ms] at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.executeFlow(DefaultFlowExecutor.java:145)
+2025-03-24 16:40:31,586 [DEBUG] Exiting DefaultFlowExecutor (code 137)... at com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor.executeFlow(DefaultFlowExecutor.java:146)
+2025-03-24 16:40:31,594 [INFO] Sending shutdown signal to com.parasoft.xtest.techsupport.TechSupportServiceFactory@35c7008a at com.parasoft.xtest.services.internal.osgi.ServicesListener.notifyUnregisteringService(ServicesListener.java:75)
+2025-03-24 16:40:31,600 [INFO] Sending shutdown signal to com.parasoft.xtest.lic.client.internal.service.LicenseServiceFactory@62f1c6a5 at com.parasoft.xtest.services.internal.osgi.ServicesListener.notifyUnregisteringService(ServicesListener.java:75)
+2025-03-24 16:40:31,613 [INFO] Disposing module and releasing license for c++test at com.parasoft.xtest.lic.client.internal.service.LicenseServiceModules.dispose(LicenseServiceModules.java:188)
+2025-03-24 16:40:31,614 [INFO] cancelTask: Timer at com.parasoft.xtest.lic.client.internal.LicenseCheckTimer.cancelTask(LicenseCheckTimer.java:40)
+2025-03-24 16:40:31,615 [INFO] Releasing license feature: C++Test at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,616 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,626 [INFO] Releasing license feature: C++Test Coding Standards at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,628 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,635 [INFO] Releasing license feature: C++Test Flow Analysis at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,637 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,648 [INFO] Releasing license feature: C++Test Automation at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,649 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,657 [INFO] Releasing license feature: C++Test DTP Publish at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,658 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,665 [INFO] Releasing license feature: C++Test Unit Test at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,666 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,672 [INFO] Releasing license feature: C++Test Coverage at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,673 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,679 [INFO] Releasing license feature: C++Test Desktop Command Line at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,680 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,685 [INFO] Releasing license feature: C++Test AUTOSAR Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,686 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,692 [INFO] Releasing license feature: C++Test CWE Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,693 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,699 [INFO] Releasing license feature: C++Test DISA STIG Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,700 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,705 [INFO] Releasing license feature: C++Test HIC++ Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,706 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,712 [INFO] Releasing license feature: C++Test JSF Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,713 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,719 [INFO] Releasing license feature: C++Test MISRA Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,720 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,727 [INFO] Releasing license feature: C++Test MISRA C 2012 Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,728 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,734 [INFO] Releasing license feature: C++Test MISRA C++ 2023 Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,736 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,742 [INFO] Releasing license feature: C++Test OWASP Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,743 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,749 [INFO] Releasing license feature: C++Test Security Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,750 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,757 [INFO] Releasing license feature: C++Test SEI CERT C Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,758 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,764 [INFO] Releasing license feature: C++Test SEI CERT C++ Rules at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,765 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,772 [INFO] Releasing license feature: C++Test Coverage Advisor at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,773 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,779 [INFO] Releasing license feature: C++Test Code Dependency Export at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,780 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,789 [INFO] Releasing license feature: C++Test LLM Integration at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:524)
+2025-03-24 16:40:31,789 [DEBUG] Using token file for user syoung: /tmp/.pslic/3505533831667B764AA1D72CD9AB2E_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
+2025-03-24 16:40:31,796 [INFO] Sending shutdown signal to com.parasoft.xtest.common.application.OSGiApplication@425357dd at com.parasoft.xtest.services.internal.osgi.ServicesListener.notifyUnregisteringService(ServicesListener.java:75)
+2025-03-24 16:40:31,807 [INFO] Sending shutdown signal to com.parasoft.xtest.common.oidc.OidcServiceFactory@6c9ba35a at com.parasoft.xtest.services.internal.osgi.ServicesListener.notifyUnregisteringService(ServicesListener.java:75)
+2025-03-24 16:40:31,818 [INFO] Sending shutdown signal to com.parasoft.xtest.common.profiler.ProfilerStatisticsService@7b70f885 at com.parasoft.xtest.services.internal.osgi.ServicesListener.notifyUnregisteringService(ServicesListener.java:75)
+2025-03-24 16:40:31,829 [DEBUG] 
+License Profiler
++ ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+| NAME                                                         | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+| LicenseService.isEnabled[Main]                               | 2     | 0.678     | 0.337   | 0.341   | 0.339   |
+| IntLicManager.getState[C++Test]                              | 29    | 0.677     | 0.0     | 0.339   | 0.023   |
+| IntLicManager.activateLicense                                | 1     | 0.337     | 0.337   | 0.337   | 0.337   |
+| IntLicManager.WAIT[main]                                     | 1     | 0.331     | 0.331   | 0.331   | 0.331   |
+| IntLicManager.WAIT[ServiceDiagnosticCollector Thread]        | 1     | 0.331     | 0.331   | 0.331   | 0.331   |
+| IntLicManager.releaseLicenes                                 | 1     | 0.175     | 0.175   | 0.175   | 0.175   |
+| IntLicManager.activateFinished                               | 1     | 0.068     | 0.068   | 0.068   | 0.068   |
+| LicenseModule.initializeModule                               | 1     | 0.064     | 0.064   | 0.064   | 0.064   |
+| IntLicManager.checkFinished                                  | 1     | 0.059     | 0.059   | 0.059   | 0.059   |
+| LicenseService.isEnabled[Security]                           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Command-Line-Execution]             | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Flow-Analysis]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Team-Share-Edit]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Team-Share-Access]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Flow Analysis]                | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Mass-Creation]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Automation]                         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Performance-Benchmarking]           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Native-Tests-Import]                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Embedded-Testing]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[API-Test-Creation]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Runtime-Error-Detection]            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Code-Review]                        | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Coverage]                           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Spring-Framework]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Automation]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test MISRA Rules]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Concerto-Access]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Enforce-Max-Errors]                 | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Rule-Wizard]                        | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test LLM Integration]              | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Unit Test]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Email-Reports]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Quick-Fix]                          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Unit-Testing]                       | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Desktop Command Line]         | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Max-Unit-Test-Bulk-Testables-Value] | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Coverage Advisor]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[LLM-Integration]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[DTP-Access]                         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Flow-Analysis-Data]                 | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[XML-Report-Generation]              | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Team-Share-Results-Upload]          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Application-Monitoring]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseServiceModules .statusChanged                         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Coding-Standards]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Change-Based-Testing]               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Sniffer]                            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Bug-Detective]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Generate-Recommendations]           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Coding Standards]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Source-Control]                     | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test DTP Publish]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.invokeAsyncCallsQueue                          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Parameterization]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[MISRA Rules]                        | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Coverage]                     | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Self-Healing]                       | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
++ ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 2.72s
+
+C++test Scope Profiler
++ ----------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                                | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ----------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| TraceBuildDataProvider.computeScope | 1     | 0.13      | 0.13    | 0.13    | 0.13    |
+| SlnScopeComputer.computeScope       | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
+| TxtFileReader.computeScope          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LstFileReader.computeScope          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| BdfFileReader.computeScope          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| CmakeBuildDataProvider.computeScope | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| DirectCommandHandler.computeScope   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| VCProjScopeComputer.computeScope    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| VCXProjScopeComputer.computeScope   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
++ ----------------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.131s
+
+Async Call Profiler
++ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                                        | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| InternalLicenseManager.activateLicense:391  | 1     | 0.406     | 0.406   | 0.406   | 0.406   |
+| InternalLicenseManager.invokeAsyncCall:1244 | 42    | 0.175     | 0.0     | 0.175   | 0.004   |
+| AsyncCallHandler.startThread                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
++ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.581s
+
+Rule Profiler
++ ------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+| NAME                                                   | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+| RulesService.init                                      | 1     | 0.538     | 0.538   | 0.538   | 0.538   |
+| RuleDescriptionParser.parseFile                        | 9     | 0.272     | 0.014   | 0.077   | 0.03    |
+| RuleDescriptionUpdateService.refreshSharedDescriptions | 1     | 0.105     | 0.105   | 0.105   | 0.105   |
++ ------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.915s
+
+XRest Profiler
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                      | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+| /grs/api/v1.9/dtpServices | 1     | 0.064     | 0.064   | 0.064   | 0.064   |
+| /grs/api/v1/dtpServices   | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.065s
+
+VM Info Profiler
++ ------ + ----- + --------- + ------- + ------- + ------- +
+| NAME   | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------ + ----- + --------- + ------- + ------- + ------- +
+| Docker | 1     | 0.012     | 0.012   | 0.012   | 0.012   |
+| AWS    | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
+| Azure  | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
++ ------ + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.014s
+
+Default Profiler
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                      | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+| CryptUtil.decryptPassword | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
+| CryptUtil.encryptPassword | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.0s
+ at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:133)
+2025-03-24 16:40:31,830 [DEBUG] Total: 15 seconds (total - 15 seconds) at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:136)
+2025-03-24 16:40:31,858 [DEBUG] Memory Statistics Profiler
++ -------------- + --------- +
+| Memory Metric  | Size [MB] |
++ -------------- + --------- +
+| Current memory | 23        |
+| Max memory     | 2147      |
+| Total memory   | 57        |
++ -------------- + --------- +
+ at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:140)
+2025-03-24 16:40:31,861 [DEBUG] Log Issues Profiler
++ ------------- + ----- +
+| Logging Level | Count |
++ ------------- + ----- +
+| TRACE         | 0     |
+| TIME          | 0     |
+| DEBUG         | 298   |
+| INFO          | 176   |
+| WARN          | 34    |
+| ERROR         | 0     |
+| FATAL         | 0     |
++ ------------- + ----- +
+ at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:144)
+2025-03-24 16:40:31,862 [INFO] Sending shutdown signal to com.parasoft.xtest.common.telemetry.TelemetryReporterFactory@10466c40 at com.parasoft.xtest.services.internal.osgi.ServicesListener.notifyUnregisteringService(ServicesListener.java:75)
+2025-03-24 16:40:31,886 [INFO] Sending post-shutdown signal to com.parasoft.xtest.common.application.OSGiApplication@425357dd at com.parasoft.xtest.services.internal.osgi.ServicesListener.servicesStopped(ServicesListener.java:56)
+2025-03-24 16:40:31,887 [INFO] Sending post-shutdown signal to com.parasoft.xtest.common.profiler.ProfilerStatisticsService@7b70f885 at com.parasoft.xtest.services.internal.osgi.ServicesListener.servicesStopped(ServicesListener.java:56)
+2025-03-24 16:40:31,890 [INFO] Sending post-shutdown signal to com.parasoft.xtest.lic.client.internal.service.LicenseServiceFactory@62f1c6a5 at com.parasoft.xtest.services.internal.osgi.ServicesListener.servicesStopped(ServicesListener.java:56)
+2025-03-24 16:40:31,891 [INFO] Sending post-shutdown signal to com.parasoft.xtest.techsupport.TechSupportServiceFactory@35c7008a at com.parasoft.xtest.services.internal.osgi.ServicesListener.servicesStopped(ServicesListener.java:56)
+2025-03-24 16:40:31,891 [INFO] Sending post-shutdown signal to com.parasoft.xtest.common.telemetry.TelemetryReporterFactory@10466c40 at com.parasoft.xtest.services.internal.osgi.ServicesListener.servicesStopped(ServicesListener.java:56)
+2025-03-24 16:40:31,891 [INFO] Sending post-shutdown signal to com.parasoft.xtest.common.oidc.OidcServiceFactory@6c9ba35a at com.parasoft.xtest.services.internal.osgi.ServicesListener.servicesStopped(ServicesListener.java:56)
+2025-03-24 16:40:31,957 [DEBUG] OSGI finished [23215 ms] at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:170)
+2025-03-24 16:40:31,957 [INFO] Exiting C/C++test (code 137)... at com.parasoft.xtest.cpp.launcher.OsgiLauncher.main(OsgiLauncher.java:171)

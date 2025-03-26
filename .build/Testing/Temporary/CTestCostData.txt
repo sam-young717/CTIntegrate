@@ -1,0 +1,5 @@
+TimerTest.StartTimer 0 0
+TimerTest.StopTimer 0 0
+---
+TimerTest.StartTimer
+TimerTest.StopTimer

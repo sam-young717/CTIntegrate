@@ -1,0 +1,224 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Parasoft C/C++test - Code Coverage Report</title>
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+table {
+table-layout: fixed;
+width: 100%;
+border-collapse: collapse;
+border: solid 1px #E6EEEE;
+font-size: smaller;
+}
+thead {
+background-color: #D6EEEE;
+}
+th.element {
+width:40%;
+cursor: pointer;
+}
+th.metric {
+text-align:right;
+padding-right:2px;
+cursor: pointer;
+}
+td {
+border-right: solid 1px #E6EEEE;
+word-wrap:break-word;
+white-space:normal;
+}
+td.stats {
+text-align:right;
+padding-right:2px;
+}
+td.function {
+padding-left:10px;
+}
+td.covna {
+background-color: #E7EEEE;
+}
+td.covlow {
+background-color: rgb(252, 225, 229);
+}
+td.covmed {
+background-color: rgb(255, 244, 194);
+}
+td.covhigh {
+background-color: rgb(230, 245, 208);
+}
+tr {
+border-bottom: solid 1px #FFFFFF;
+}
+tr:hover {
+border-bottom: solid 1px #B6BBBB;
+}
+tr.totalRow {
+font-weight: bold;
+border-top: solid 1px #E6EEEE;
+}
+a {
+color: #0b5799;
+text-decoration: none;
+}
+hr {
+border-color: #E6EEEE;
+border-width: 1px;
+border-top: none;
+}
+.hide-toggle
+{
+display: none;
+}
+.bold-toggle
+{
+font-weight: bold;
+}
+.footdate {
+font-size: smaller;
+text-align: center;
+}
+</style>
+<script>
+function toggleFunctions() {
+var functions = document.getElementsByClassName("functionRow");
+for (var i = 0; i < functions.length; i++) {
+functions[i].classList.toggle("hide-toggle");
+}
+var elements = document.getElementsByClassName("elementRow");
+for (var i = 0; i < elements.length; i++) {
+elements[i].classList.toggle("bold-toggle");
+}
+var toggleFunctions = document.getElementById("toggleFunctions");
+if (toggleFunctions.textContent === "Hide functions") {
+toggleFunctions.textContent = "Show functions";
+} else {
+toggleFunctions.textContent = "Hide functions";
+}
+}
+function sortStats(event, compareFunction) {
+const th = event.currentTarget;
+const colIdx = Array.from(th.parentElement.children).indexOf(th);
+const table = th.closest('table');
+const tbody = table.tBodies[0];
+const direction = tbody.getAttribute('sort-direction') === 'asc' ? 'desc' : 'asc';
+tbody.setAttribute('sort-direction', direction);
+const rows = [];
+for (const row of Array.from(tbody.rows)) {
+if (row.classList.contains("elementRow")) {
+rows.push([row, []]);
+} else {
+rows[rows.length - 1][1].push(row);
+}
+}
+rows.sort((a, b) => {
+const aText = a[0].children[colIdx].textContent.trim();
+const bText = b[0].children[colIdx].textContent.trim();
+return compareFunction(aText, bText, direction);
+});
+rows.forEach(r => {
+tbody.appendChild(r[0]);
+r[1].sort((a, b) => {
+const aText = a.children[colIdx].textContent.trim();
+const bText = b.children[colIdx].textContent.trim();
+return compareFunction(aText, bText, direction);
+});
+r[1].forEach(fr => tbody.appendChild(fr));
+});
+for (const child of th.parentElement.children) {
+child.innerHTML = child.innerHTML.replace(/\u25b4|\u25be/g, '');
+if (child === th) {
+child.innerHTML = (direction === 'asc' ? '\u25b4' : '\u25be') + child.innerHTML;
+}
+}
+}
+function sortPercentage(event) {
+sortStats(event, (aText, bText, direction) => {
+const getPercentage = (statString) => {
+const percPos = statString.indexOf('%');
+if (percPos === -1) {
+return -1;
+} else {
+return parseInt(statString.substring(0, percPos));
+}
+}
+const aPercentage = getPercentage(aText);
+const bPercentage = getPercentage(bText);
+var order = (direction === 'asc') ? aPercentage - bPercentage : bPercentage - aPercentage;
+if (order === 0) {
+const getTotal = (statString) => {
+const divPos = statString.indexOf('/');
+if (divPos === -1) {
+return -1;
+} else {
+return parseInt(statString.substring(divPos + 1).trim());
+}
+}
+const aTotal = getTotal(aText);
+const bTotal = getTotal(bText);
+order = (direction === 'asc') ? aTotal - bTotal : bTotal - aTotal;
+}
+return order;
+});
+}
+function sortName(event) {
+sortStats(event, (aText, bText, direction) => {
+return (direction === 'asc') ? aText.localeCompare(bText) : bText.localeCompare(aText);
+});
+}
+</script>
+</head>
+<body>
+<h1>Parasoft C/C++test - Code Coverage Report</h1>
+<ul><small>
+<li>LC - Line Coverage</li>
+<li>SC - Statement Coverage</li>
+<li>BC - Block Coverage</li>
+<li>DC - Decision (Branch) Coverage</li>
+<li>SCC - Simple Condition Coverage</li>
+<li>MCDC - Modified Condition Decision Coverage</li>
+<li>FC - Function Coverage</li>
+<li>CC - Call Coverage</li>
+</small></ul>
+<button id="toggleFunctions" type="button" onclick="toggleFunctions()">Hide functions</button>
+<table>
+<thead>
+<tr>
+<th class="element" onclick="sortName(event)">Element</th><th class="metric" onclick="sortPercentage(event)">LC</th><th class="metric" onclick="sortPercentage(event)">SC</th><th class="metric" onclick="sortPercentage(event)">BC</th><th class="metric" onclick="sortPercentage(event)">DC</th><th class="metric" onclick="sortPercentage(event)">SCC</th><th class="metric" onclick="sortPercentage(event)">MCDC</th><th class="metric" onclick="sortPercentage(event)">FC</th><th class="metric" onclick="sortPercentage(event)">CC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="elementRow bold-toggle"><td>gtest-cmake-example/clock.c</td><td class='stats covlow'>0% 0/6</td><td class='stats covlow'>0% 0/6</td><td class='stats covlow'>0% 0/2</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/4</td></tr>
+<tr class="functionRow"><td class="function">display_time()</td><td class='stats covlow'>0% 0/5</td><td class='stats covlow'>0% 0/5</td><td class='stats covlow'>0% 0/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/4</td></tr>
+<tr class="functionRow"><td class="function">set_time()</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covlow'>0% 0/1</td><td class='stats covna'>N/A</td></tr>
+<tr class="elementRow bold-toggle"><td>gtest-cmake-example/driver.c</td><td class='stats covhigh'>78% 29/37</td><td class='stats covhigh'>78% 29/37</td><td class='stats covmed'>69% 9/13</td><td class='stats covmed'>50% 5/10</td><td class='stats covmed'>50% 1/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covhigh'>100% 3/3</td><td class='stats covhigh'>79% 22/28</td></tr>
+<tr class="functionRow"><td class="function">main()</td><td class='stats covhigh'>100% 4/4</td><td class='stats covhigh'>100% 4/4</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 3/3</td></tr>
+<tr class="functionRow"><td class="function">main_loop()</td><td class='stats covmed'>58% 11/19</td><td class='stats covmed'>58% 11/19</td><td class='stats covmed'>64% 7/11</td><td class='stats covmed'>50% 5/10</td><td class='stats covmed'>50% 1/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covmed'>45% 5/11</td></tr>
+<tr class="functionRow"><td class="function">print_menu_get_action()</td><td class='stats covhigh'>100% 14/14</td><td class='stats covhigh'>100% 14/14</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 14/14</td></tr>
+<tr class="elementRow bold-toggle"><td>gtest-cmake-example/stdinout.c</td><td class='stats covhigh'>100% 11/11</td><td class='stats covhigh'>100% 11/11</td><td class='stats covhigh'>100% 2/2</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 2/2</td><td class='stats covhigh'>100% 2/2</td></tr>
+<tr class="functionRow"><td class="function">get_input_digit()</td><td class='stats covhigh'>100% 10/10</td><td class='stats covhigh'>100% 10/10</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td></tr>
+<tr class="functionRow"><td class="function">print_string()</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td></tr>
+<tr class="elementRow bold-toggle"><td>gtest-cmake-example/timer.c</td><td class='stats covmed'>68% 39/57</td><td class='stats covmed'>67% 42/63</td><td class='stats covmed'>59% 16/27</td><td class='stats covmed'>50% 7/14</td><td class='stats covmed'>50% 7/14</td><td class='stats covlow'>29% 2/7</td><td class='stats covhigh'>75% 6/8</td><td class='stats covmed'>66% 21/32</td></tr>
+<tr class="functionRow"><td class="function">add_timer()</td><td class='stats covhigh'>83% 5/6</td><td class='stats covhigh'>83% 5/6</td><td class='stats covhigh'>75% 3/4</td><td class='stats covmed'>50% 1/2</td><td class='stats covmed'>50% 1/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 2/2</td></tr>
+<tr class="functionRow"><td class="function">add_timer_record()</td><td class='stats covmed'>67% 2/3</td><td class='stats covmed'>67% 2/3</td><td class='stats covmed'>67% 2/3</td><td class='stats covmed'>50% 1/2</td><td class='stats covmed'>50% 1/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covlow'>0% 0/1</td></tr>
+<tr class="functionRow"><td class="function">delete_timer_record()</td><td class='stats covhigh'>88% 7/8</td><td class='stats covhigh'>80% 8/10</td><td class='stats covmed'>71% 5/7</td><td class='stats covhigh'>75% 3/4</td><td class='stats covhigh'>75% 3/4</td><td class='stats covmed'>50% 1/2</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td></tr>
+<tr class="functionRow"><td class="function">format_timer_record()</td><td class='stats covlow'>0% 0/7</td><td class='stats covlow'>0% 0/7</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/5</td></tr>
+<tr class="functionRow"><td class="function">init_timer()</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td></tr>
+<tr class="functionRow"><td class="function">list_timers()</td><td class='stats covlow'>0% 0/8</td><td class='stats covlow'>0% 0/10</td><td class='stats covlow'>0% 0/5</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/5</td></tr>
+<tr class="functionRow"><td class="function">query_user()</td><td class='stats covhigh'>100% 21/21</td><td class='stats covhigh'>100% 21/21</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 16/16</td></tr>
+<tr class="functionRow"><td class="function">uninit_timer()</td><td class='stats covhigh'>100% 3/3</td><td class='stats covhigh'>100% 5/5</td><td class='stats covhigh'>100% 4/4</td><td class='stats covhigh'>100% 2/2</td><td class='stats covhigh'>100% 2/2</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td></tr>
+</tbody>
+<tfoot>
+<tr class="totalRow"><td>TOTAL (4 files, 15 functions)</td><td class='stats covmed'>71% 79/111</td><td class='stats covmed'>70% 82/117</td><td class='stats covmed'>61% 27/44</td><td class='stats covmed'>50% 12/24</td><td class='stats covmed'>50% 8/16</td><td class='stats covlow'>25% 2/8</td><td class='stats covmed'>73% 11/15</td><td class='stats covmed'>68% 45/66</td></tr>
+</tfoot>
+</table>
+</body>
+<footer>
+<hr>
+<div class="footdate">
+<p>Parasoft C/C++test - Code Coverage Report - Generated on 2025-03-26 15:34:46</p>
+</div>
+</footer>
+</html>

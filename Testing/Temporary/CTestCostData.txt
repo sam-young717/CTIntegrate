@@ -1,0 +1,3 @@
+TimerTest.StartTimer 8 0.00931588
+TimerTest.StopTimer 8 0.00724863
+---
