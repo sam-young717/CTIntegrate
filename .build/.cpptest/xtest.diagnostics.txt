@@ -1,4 +1,4 @@
-Diagnostics file initialized on Wed Mar 26 15:34:36 EDT 2025
+Diagnostics file initialized on Wed Mar 26 16:27:34 EDT 2025
 
 ================================================================================================
 SERVICE: com.parasoft.xtest.lic.client.internal.service.LicenseService@ccb4b1b
@@ -72,7 +72,7 @@ License requirements statuses:
 
 
 ================================================================================================
-SERVICE: com.parasoft.xtest.common.telemetry.TelemetryReporter@a5bd950
+SERVICE: com.parasoft.xtest.common.telemetry.TelemetryReporter@7756c3cd
 CONTEXT: com.parasoft.cpptest.coverage.common.services.ServiceContextWithConsole@4097cac
 LICENSE ENABLED: 
 ================================================================================================
@@ -92,16 +92,16 @@ Services provider profiler (COUNT > 1):
 + -------------------------------------- + ----- + --------- +
 | NAME                                   | COUNT | TOTAL [s] |
 + -------------------------------------- + ----- + --------- +
+| getService(IApplication)               | 49    | 0.0       |
 | getService(IProfilerStatisticsService) | 3     | 0.0       |
 | getService(IProfilerService)           | 3     | 0.0       |
 | getService(ITelemetryReporter$Factory) | 2     | 0.0       |
-| getService(IApplication)               | 49    | 0.001     |
-| getService(ILicenseService)            | 4     | 0.023     |
-| getService(ISystemService)             | 3     | 0.043     |
-| getServices(IPreferences)              | 4     | 0.056     |
-| getService(ITelemetryReporter)         | 3     | 0.141     |
+| getService(ILicenseService)            | 4     | 0.013     |
+| getService(ISystemService)             | 3     | 0.02      |
+| getServices(IPreferences)              | 4     | 0.052     |
+| getService(ITelemetryReporter)         | 3     | 0.097     |
 + -------------------------------------- + ----- + --------- +
-TOTAL: 0.264
+TOTAL: 0.182
 ================================================================================================
 SERVICES INSTANCES COUNT
 ================================================================================================
@@ -130,13 +130,13 @@ License Profiler
 + ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
 | NAME                                                         | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
-| LicenseService.isEnabled[Main]                               | 2     | 1.609     | 0.803   | 0.806   | 0.804   |
-| IntLicManager.getState[C++Test]                              | 38    | 1.608     | 0.0     | 0.804   | 0.042   |
-| IntLicManager.activateLicense                                | 1     | 0.803     | 0.803   | 0.803   | 0.803   |
-| IntLicManager.WAIT[main]                                     | 1     | 0.801     | 0.801   | 0.801   | 0.801   |
-| IntLicManager.WAIT[ServiceDiagnosticCollector Thread]        | 1     | 0.8       | 0.8     | 0.8     | 0.8     |
-| LicenseModule.initializeModule                               | 1     | 0.181     | 0.181   | 0.181   | 0.181   |
-| IntLicManager.activateFinished                               | 1     | 0.01      | 0.01    | 0.01    | 0.01    |
+| LicenseService.isEnabled[Main]                               | 2     | 1.086     | 0.541   | 0.545   | 0.543   |
+| IntLicManager.getState[C++Test]                              | 38    | 1.083     | 0.0     | 0.541   | 0.028   |
+| IntLicManager.activateLicense                                | 1     | 0.543     | 0.543   | 0.543   | 0.543   |
+| IntLicManager.WAIT[main]                                     | 1     | 0.539     | 0.539   | 0.539   | 0.539   |
+| IntLicManager.WAIT[ServiceDiagnosticCollector Thread]        | 1     | 0.539     | 0.539   | 0.539   | 0.539   |
+| LicenseModule.initializeModule                               | 1     | 0.117     | 0.117   | 0.117   | 0.117   |
+| IntLicManager.activateFinished                               | 1     | 0.008     | 0.008   | 0.008   | 0.008   |
 | IntLicManager.checkFinished                                  | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
 | LicenseService.isEnabled[CT-Extended-Coverage]               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Security]                           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
@@ -181,27 +181,27 @@ License Profiler
 | LicenseService.isEnabled[CT-Basic-Coverage]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Self-Healing]                       | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 + ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 5.813s
+TOTAL: 3.916s
 
 Async Call Profiler
 + ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
 | NAME                                        | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-| InternalLicenseManager.activateLicense:429  | 1     | 0.814     | 0.814   | 0.814   | 0.814   |
+| InternalLicenseManager.activateLicense:429  | 1     | 0.552     | 0.552   | 0.552   | 0.552   |
 | AsyncCallHandler.startThread                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | InternalLicenseManager.invokeAsyncCall:1282 | 40    | 0.0       | 0.0     | 0.0     | 0.0     |
 + ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.814s
+TOTAL: 0.552s
 
 VM Info Profiler
 + ------ + ----- + --------- + ------- + ------- + ------- +
 | NAME   | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------ + ----- + --------- + ------- + ------- + ------- +
-| Docker | 1     | 0.011     | 0.011   | 0.011   | 0.011   |
-| Azure  | 1     | 0.003     | 0.003   | 0.003   | 0.003   |
+| Docker | 1     | 0.009     | 0.009   | 0.009   | 0.009   |
+| Azure  | 1     | 0.002     | 0.002   | 0.002   | 0.002   |
 | AWS    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 + ------ + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.014s
+TOTAL: 0.011s
 
 Default Profiler
 + ------------------------- + ----- + --------- + ------- + ------- + ------- +
@@ -231,9 +231,9 @@ LOG ISSUES
 + ------------- + ----- +
 | TRACE         | 0     |
 | TIME          | 0     |
-| DEBUG         | 99    |
+| DEBUG         | 98    |
 | INFO          | 72    |
-| WARN          | 1     |
+| WARN          | 2     |
 | ERROR         | 0     |
 | FATAL         | 0     |
 + ------------- + ----- +
