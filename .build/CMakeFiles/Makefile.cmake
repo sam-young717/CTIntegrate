@@ -20,7 +20,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/googletest-src/googletest/cmake/gtest_main.pc.in"
   "_deps/googletest-src/googletest/cmake/internal_utils.cmake"
   "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/CMakeLists.txt"
-  "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/cpptest-coverage.cmake"
   "/usr/share/cmake-3.28/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
@@ -82,9 +81,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/cpptestcov-compute.dir/DependInfo.cmake"
-  "CMakeFiles/cpptestcov-report.dir/DependInfo.cmake"
-  "CMakeFiles/cpptestcov-suppress.dir/DependInfo.cmake"
   "CMakeFiles/timer.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"

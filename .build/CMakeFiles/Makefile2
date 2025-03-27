@@ -72,9 +72,6 @@ preinstall: _deps/googletest-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/cpptestcov-compute.dir/clean
-clean: CMakeFiles/cpptestcov-report.dir/clean
-clean: CMakeFiles/cpptestcov-suppress.dir/clean
 clean: CMakeFiles/timer.dir/clean
 clean: _deps/googletest-build/clean
 .PHONY : clean
@@ -129,84 +126,6 @@ _deps/googletest-build/googletest/preinstall:
 _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean
 _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
 .PHONY : _deps/googletest-build/googletest/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/cpptestcov-compute.dir
-
-# All Build rule for target.
-CMakeFiles/cpptestcov-compute.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-compute.dir/build.make CMakeFiles/cpptestcov-compute.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-compute.dir/build.make CMakeFiles/cpptestcov-compute.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles --progress-num= "Built target cpptestcov-compute"
-.PHONY : CMakeFiles/cpptestcov-compute.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/cpptestcov-compute.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpptestcov-compute.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles 0
-.PHONY : CMakeFiles/cpptestcov-compute.dir/rule
-
-# Convenience name for target.
-cpptestcov-compute: CMakeFiles/cpptestcov-compute.dir/rule
-.PHONY : cpptestcov-compute
-
-# clean rule for target.
-CMakeFiles/cpptestcov-compute.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-compute.dir/build.make CMakeFiles/cpptestcov-compute.dir/clean
-.PHONY : CMakeFiles/cpptestcov-compute.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/cpptestcov-report.dir
-
-# All Build rule for target.
-CMakeFiles/cpptestcov-report.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-report.dir/build.make CMakeFiles/cpptestcov-report.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-report.dir/build.make CMakeFiles/cpptestcov-report.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles --progress-num= "Built target cpptestcov-report"
-.PHONY : CMakeFiles/cpptestcov-report.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/cpptestcov-report.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpptestcov-report.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles 0
-.PHONY : CMakeFiles/cpptestcov-report.dir/rule
-
-# Convenience name for target.
-cpptestcov-report: CMakeFiles/cpptestcov-report.dir/rule
-.PHONY : cpptestcov-report
-
-# clean rule for target.
-CMakeFiles/cpptestcov-report.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-report.dir/build.make CMakeFiles/cpptestcov-report.dir/clean
-.PHONY : CMakeFiles/cpptestcov-report.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/cpptestcov-suppress.dir
-
-# All Build rule for target.
-CMakeFiles/cpptestcov-suppress.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-suppress.dir/build.make CMakeFiles/cpptestcov-suppress.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-suppress.dir/build.make CMakeFiles/cpptestcov-suppress.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles --progress-num= "Built target cpptestcov-suppress"
-.PHONY : CMakeFiles/cpptestcov-suppress.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/cpptestcov-suppress.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpptestcov-suppress.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles 0
-.PHONY : CMakeFiles/cpptestcov-suppress.dir/rule
-
-# Convenience name for target.
-cpptestcov-suppress: CMakeFiles/cpptestcov-suppress.dir/rule
-.PHONY : cpptestcov-suppress
-
-# clean rule for target.
-CMakeFiles/cpptestcov-suppress.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-suppress.dir/build.make CMakeFiles/cpptestcov-suppress.dir/clean
-.PHONY : CMakeFiles/cpptestcov-suppress.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/timer.dir
