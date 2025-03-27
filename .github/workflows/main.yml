@@ -99,8 +99,8 @@ jobs:
       #   # Execute the build.  You can specify a specific target with "--target <NAME>"
       #   run:  cpptestcov-report dtp -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage gtest_results.xml
         
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v5
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -117,11 +117,11 @@ jobs:
           path: |
             .coverage/*.*
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v4
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Show Coverage HTML Link
         shell: bash
