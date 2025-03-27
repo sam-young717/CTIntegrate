@@ -1,3 +1,6 @@
+/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles/cpptestcov-compute.dir
+/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles/cpptestcov-report.dir
+/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles/cpptestcov-suppress.dir
 /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles/timer.dir
 /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles/test.dir
 /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/CMakeFiles/edit_cache.dir

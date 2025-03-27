@@ -28,10 +28,10 @@ struct __CPTR_Dummy_Type {
 static unsigned char _coverage_code[_coverage_code_size];
 
 EXTERN_C_LINKAGE_START
-CppTestCoverageInfo __CPTR_cui_3695587068_1409489_560172518 = 
+CppTestCoverageInfo __CPTR_cui_3695587068_1445423_582606194 = 
 {
     /*id=*/0U,
-    /*externalId=*/{252, 46, 209, 129, 33, 0, 0, 0}, 
+    /*externalId=*/{252, 46, 47, 14, 34, 0, 0, 0}, 
     /*idAssociationWasSent=*/0,
     /*prev=*/0, 
     /*covDataUnitSize=*/_coverage_data_unit_size,
@@ -43,7 +43,7 @@ CppTestCoverageInfo __CPTR_cui_3695587068_1409489_560172518 =
 };
 EXTERN_C_LINKAGE_END
 
-#define __CPTR_cui &__CPTR_cui_3695587068_1409489_560172518
+#define __CPTR_cui &__CPTR_cui_3695587068_1445423_582606194
 
 
 #define _cpptest_strdata_var(id, bogus) _cpptest_strdata[id]

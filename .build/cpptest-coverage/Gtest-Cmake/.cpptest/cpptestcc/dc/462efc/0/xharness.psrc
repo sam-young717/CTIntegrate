@@ -11,7 +11,7 @@ xharness.useFunctionCoverage true
 xharness.usePathCoverage false
 xharness.useCallCoverage true
 xharness.addRuntimeAutoFinalization true
-xharness.coverageMapFile /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/cpptest-coverage/Gtest-Cmake/.cpptest/cpptestcc/1743001578355_1409446/0/stdinout.c.map
+xharness.coverageMapFile /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/cpptest-coverage/Gtest-Cmake/.cpptest/cpptestcc/1743080632695_1445420/0/stdinout.c.map
 xharness.routineManager "symbol_file=*" command=setProperty property=canAddCoverageIn value=off
 xharness.routineManager "symbol_file=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/*" command=setProperty property=canAddCoverageIn value=on
 xharness.routineManager "symbol_file=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build/*" command=setProperty property=canAddCoverageIn value=off

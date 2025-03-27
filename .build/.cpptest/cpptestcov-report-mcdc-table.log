@@ -1,6 +1,0 @@
-2025-03-26 16:27:42,886 [INFO] Starting cpptestcov-report-mcdc-table 2025.1.0 (10.7.2.20250219B956)...
-2025-03-26 16:27:42,889 [INFO] Arguments: ['/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.coverage']
-2025-03-26 16:27:42,890 [INFO] Working dir: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build
-2025-03-26 16:27:42,892 [INFO] Python version: 3.12.3
-2025-03-26 16:27:42,893 [INFO] OS arch: x86_64
-2025-03-26 16:27:42,893 [INFO] OS name: Linux

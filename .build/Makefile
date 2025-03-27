@@ -172,6 +172,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cpptestcov-compute
+
+# Build rule for target.
+cpptestcov-compute: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpptestcov-compute
+.PHONY : cpptestcov-compute
+
+# fast build rule for target.
+cpptestcov-compute/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-compute.dir/build.make CMakeFiles/cpptestcov-compute.dir/build
+.PHONY : cpptestcov-compute/fast
+
+#=============================================================================
+# Target rules for targets named cpptestcov-report
+
+# Build rule for target.
+cpptestcov-report: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpptestcov-report
+.PHONY : cpptestcov-report
+
+# fast build rule for target.
+cpptestcov-report/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-report.dir/build.make CMakeFiles/cpptestcov-report.dir/build
+.PHONY : cpptestcov-report/fast
+
+#=============================================================================
+# Target rules for targets named cpptestcov-suppress
+
+# Build rule for target.
+cpptestcov-suppress: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpptestcov-suppress
+.PHONY : cpptestcov-suppress
+
+# fast build rule for target.
+cpptestcov-suppress/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-suppress.dir/build.make CMakeFiles/cpptestcov-suppress.dir/build
+.PHONY : cpptestcov-suppress/fast
+
+#=============================================================================
 # Target rules for targets named timer
 
 # Build rule for target.
@@ -345,6 +384,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... cpptestcov-compute"
+	@echo "... cpptestcov-report"
+	@echo "... cpptestcov-suppress"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"

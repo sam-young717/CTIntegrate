@@ -1,6 +1,0 @@
-2025-03-26 16:27:42,132 [INFO] Starting cpptestcov-suppress 2025.1.0 (10.7.2.20250219B956)...
-2025-03-26 16:27:42,134 [INFO] Arguments: ['/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.coverage']
-2025-03-26 16:27:42,135 [INFO] Working dir: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build
-2025-03-26 16:27:42,136 [INFO] Python version: 3.12.3
-2025-03-26 16:27:42,136 [INFO] OS arch: x86_64
-2025-03-26 16:27:42,137 [INFO] OS name: Linux

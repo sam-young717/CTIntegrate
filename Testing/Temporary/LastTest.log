@@ -1,10 +1,10 @@
-Start testing: Mar 26 11:09 EDT
+Start testing: Mar 27 09:09 EDT
 ----------------------------------------------------------
 1/2 Testing: TimerTest.StartTimer
 1/2 Test: TimerTest.StartTimer
 Command: "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/Gtest-Cmake" "--gtest_filter=TimerTest.StartTimer"
 Directory: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example
-"TimerTest.StartTimer" start time: Mar 26 11:09 EDT
+"TimerTest.StartTimer" start time: Mar 27 09:09 EDT
 Output:
 ----------------------------------------------------------
 **************************************************
@@ -72,10 +72,10 @@ Enter selection, when done press <enter> >
 Goodbye
 
 <end of output>
-Test time =   0.07 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TimerTest.StartTimer" end time: Mar 26 11:09 EDT
+"TimerTest.StartTimer" end time: Mar 27 09:09 EDT
 "TimerTest.StartTimer" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -83,7 +83,7 @@ Test Passed.
 2/2 Test: TimerTest.StopTimer
 Command: "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/Gtest-Cmake" "--gtest_filter=TimerTest.StopTimer"
 Directory: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example
-"TimerTest.StopTimer" start time: Mar 26 11:09 EDT
+"TimerTest.StopTimer" start time: Mar 27 09:09 EDT
 Output:
 ----------------------------------------------------------
 **************************************************
@@ -151,11 +151,11 @@ Enter selection, when done press <enter> >
 Goodbye
 
 <end of output>
-Test time =   0.06 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"TimerTest.StopTimer" end time: Mar 26 11:09 EDT
+"TimerTest.StopTimer" end time: Mar 27 09:09 EDT
 "TimerTest.StopTimer" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 26 11:09 EDT
+End testing: Mar 27 09:09 EDT

@@ -1,6 +1,0 @@
-2025-03-26 16:27:42,450 [INFO] Starting cpptestcov-report-stats-txt 2025.1.0 (10.7.2.20250219B956)...
-2025-03-26 16:27:42,454 [INFO] Arguments: ['-root', '/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example', '-coverage', 'LC,SC,BC,DC,SCC,MCDC,FC,CC', '/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.coverage']
-2025-03-26 16:27:42,455 [INFO] Working dir: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/gtest-cmake-example/.build
-2025-03-26 16:27:42,456 [INFO] Python version: 3.12.3
-2025-03-26 16:27:42,456 [INFO] OS arch: x86_64
-2025-03-26 16:27:42,460 [INFO] OS name: Linux

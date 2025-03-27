@@ -1,4 +1,4 @@
-Start testing: Mar 26 16:27 EDT
+Start testing: Mar 27 09:09 EDT
 ----------------------------------------------------------
 Unable to find executable: Gtest-Cmake
 1/2 Testing: TimerTest.StartTimer
@@ -12,7 +12,7 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TimerTest.StartTimer" end time: Mar 26 16:27 EDT
+"TimerTest.StartTimer" end time: Mar 27 09:09 EDT
 "TimerTest.StartTimer" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -28,8 +28,8 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TimerTest.StopTimer" end time: Mar 26 16:27 EDT
+"TimerTest.StopTimer" end time: Mar 27 09:09 EDT
 "TimerTest.StopTimer" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Mar 26 16:27 EDT
+End testing: Mar 27 09:09 EDT
